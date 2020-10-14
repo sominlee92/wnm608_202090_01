@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Three Easy Peasy Lemon Squeezy Recipes</title>
+
+
+	<link rel="stylesheet" href="recipe.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patua+One&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+	<header>
+
+	<nav class="nav">
+
+		<ul class="menu">
+
+			<a href="#section1">  <img src="image/lemon.png" width="120px"> </a>
+			<a href="#section2"> Avocado Egg Toast </a>
+			<a href="#section3"> Nutella Banna Toast </a>
+			<a href="#section4">  Wild Card </a> 
+
+		</ul>
+
+
+	</nav>
+
+	<!-- code cited : wnm601 class, Instructor :Michael Catanzaro  -->
+
+
+
+	</header>
+
+
+
+<div class="container">
+	
+	<dl>
+
+
+		<dt id="section1">
+
+
+			<h1> Three Easy Peasy Lemon Squeezy Recipes  - quarantine edition </h1>
+
+			<br>
+			<h3> Make a meal delicious with three different ways, even we stay at home. </h3>
+		</dt>
+		
+
+		<dd>
+
+
+		</dd>
+
+
+
+
+		<dt id="section2">
+
+			<img src="image/avocadoeggtoast.png" width="90%" class="center">
+			<h2>  Avocado Egg Toast </h2>
+
+
+		</dt>
+	
+
+	
+		<dd>
+			
+
+			<ul class="contents">
+			
+				<p class="title"> You must need : </p>
+				<img src="image/avocado_toast_ingredients1.png" width="70%">
+
+				<li> One Avocado </li>
+				<li> One Egg </li>
+				<li> One peice of Bread you like </li>
+
+
+				<p class="title">Optional, but make tasty</p>
+				<img src="image/avocado_toast_ingredients2.png" width="700px">
+
+				<li> Butter </li>
+				<li> pepper and Salt </li>
+				<li> Crushed Red Pepper </li>
+
+			</ul>
+
+
+			<ol class="contents">
+				<p class="title"> How to Make : </p>
+
+				<li>Cut the Fresh Avocado.</li>
+				<li> Put a slice of bread in the tosater. </li>
+				<li> Fry the egg on the fan.</li>
+				<li>Put the little of salt and pepper on the sunny side of the egg. </li>
+				<li> Put the butter on one side of toasted bread.</li>
+				<li> Put the slice of the </li>
+
+			</ol>
+	</dd>
+
+
+
+		<dt id="section3">	
+
+			<img src="image/bannanutellatoast.png" width="700px" class="center">
+			<h2>  Nutella Banna Toast </h2>
+		</dt>
+
+
+
+		<dd>
+
+
+			<ul class="contents">
+
+				<p class="title">You must need : </p>
+				<img src="image/bannanutella_toast_ingredients.png" width="700px">
+
+				<li> Two bannas </li>
+				<li> Nutella </li>
+				<li> One peice of Bread you like </li>
+				<li> Butter </li>
+			</ul>
+
+
+
+			<ol class="contents">
+				<p class="title"> How to Make : </p>
+
+				<li>Cut the Fresh Avocado.</li>
+				<li> Put a slice of bread in the tosater. </li>
+				<li> Fry the egg on the fan.</li>
+				<li>Put the little of salt and pepper on the sunny side of the egg. </li>
+				<li> Put the butter on one side of toasted bread.</li>
+				<li> Put the slice of the </li>
+
+			</ol>
+
+		</dd>
+
+
+
+
+		<dt id="section4">	
+			
+			<img src="image/wildcard.png" width="120%" class="center">
+			<h2> Wild Card </h2>
+
+		</dt>
+
+
+
+
+		<dd>
+
+
+
+				<ul class="contents">
+
+					<img src="image/uber.png" width="70%">
+
+					<li> A Smart phone </li>
+					<li> Your Favorte dilivery App</li>
+				</ul>
+
+				<ol>
+					<p class="title"> How to Make : </p>
+
+					<li>Open the Uber eats</li>
+					<li> Tap the Restaurant you want</li>
+					<li> Put the food in your cart</li>
+					<li> Order them</li>
+					<li> Pick up the foods in front of your door</li>
+
+				</ol>
+		</dd>
+
+
+
+	</dl>
+</div>
+
+
+
+	<script>
+
+
+		$("nav a").on("click",function(e){
+			e.preventDefault();
+			$(this.attributes.href.value)[0].scrollIntoView({
+				behavior:"smooth",
+				block:"start",
+				inline:"nearest"
+			})
+		})
+		
+	</script>
+
+
+</body>
+
+
+
+</html>

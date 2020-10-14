@@ -1,0 +1,153 @@
+
+
+
+body {
+	background-color:#fffed1;
+	margin: 10%;
+	font-family: 'Indie Flower', cursive;
+}
+
+
+
+.nav {
+		overflow: hidden;
+		position: fixed;
+		top: 2em;
+		right:2em;
+		padding: 10px;
+		background-color: white;
+		display: inline-block;
+	}
+
+
+.nav ul {
+		list-style-type:none;
+		margin: 0;
+		padding: 0; 
+
+	}
+
+
+	a {
+		font-family: 'Patua One', cursive;
+		letter-spacing: 1px;
+		margin-right: 35px;
+		text-decoration: none;
+	}
+	
+	a:link {
+		color: #cf9cff;
+
+	}
+
+	a:visited {
+			color: #cf9cff;
+	}
+
+	a:hover {
+		color:#fbff00;
+
+	}
+
+
+
+	.container {
+		max-width: 1200px;
+		margin-right: auto;
+		margin-left: auto;
+
+
+
+	}
+
+
+h1 {
+	font-family: 'Patua One', cursive;
+	letter-spacing: 2px;
+	/*code cited : w3school.com- CSS letter-spacing Property*/
+	color:#ffea00;
+}
+
+h2{
+	color: #8f00fc;
+			font-family: 'Patua One', cursive;
+
+		text-align: center;
+
+
+}
+
+h3{
+	color: #b24dff;
+}
+
+
+ul {
+	margin-top: 10%;
+	margin-bottom: 10%;
+
+}
+
+
+ul.contents {
+
+	margin-top:200px;
+}
+
+
+ol {
+	margin-top: 10%;
+	margin-bottom: 10%;
+	font-size: 1.5em;
+	line-height: 30px;
+}
+
+
+dt {
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
+
+
+
+li{
+	padding-top: 10px;
+}
+
+
+img.center {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 350px;
+  margin-bottom: 100px;
+  width: 50%;
+}
+
+
+
+p.title{
+		font-family: 'Indie Flower', cursive;
+		font-size: 1.5em;
+		font-weight: 700;
+		color: #2dc200;
+		padding: 10px;
+		margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
