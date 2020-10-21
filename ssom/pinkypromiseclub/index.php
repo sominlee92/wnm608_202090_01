@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-
-	<meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<title>Pinky Promise Club</title>
-
-
-   <link rel="stylesheet" href="css/styleguide.css">
-
-   <link rel="stylesheet" href="css/grid.css">
-
-   <link rel="stylesheet" href="css/storetheme.css">
-
-   <link rel="stylesheet" href="https://use.typekit.net/hgl0qsx.css">
-
-   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+   
+   <?php include "parts/meta.php" ?>
 
 </head>
+
+
+
+
 <body>
 
-   <header class="navbar">
-     
-      <div class="container display-flex flex-align-center">
-         <div class="flex-none"><h1>Styleguide of Pinky Promise Club</h1></div>
-      </div>
+      <?php include "parts/navbar.php" ?>
 
-   </header>
- <div class="view-window" style="background-image:url(img/mountains001.jpg)">
-      <h2>Product Name</h2>
-   </div>
+ <div class="view-window" style="background-image:url(img/example.jpg)">
+      <h2> Pinky Promise Club </h2>
+</div>
 
 
 
