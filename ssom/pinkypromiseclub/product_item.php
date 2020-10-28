@@ -15,8 +15,11 @@
 
    <?php include "parts/navbar.php" ?>
 
+   
 
-      <?php include "parts/footer.php" ?>
+
+
+   <?php include "parts/footer.php" ?>
 
 </body>
 </html>
