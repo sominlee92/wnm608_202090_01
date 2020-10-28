@@ -4,6 +4,8 @@
 
 
 
+
+
     --color-main-light: #fff0f7;
     --color-main-medium: #ffa8d1;
     --color-main-dark: #ff004c;
@@ -12,14 +14,14 @@
     --color-alt-medium: #7aa7ff;
     --color-alt-dark: #00203f;
     
-    --color-warning: #003acc;
+    --color-warning: #b536ff;
     --color-error: #ff004c;
-    --color-purchase: #ffa8d1;
+    --color-purchase: #da9cff;
 
    --header-height:3rem;
-}
+   --footer-height:4rem;
 
-
+ }
 
 
 /*
@@ -73,7 +75,7 @@ body {
    font-family: brandon-grotesque, sans-serif;
    font-weight: 400;
    color:#00203f;
-   background-color: var(--color-main-medium);
+   background-color: var(--color-main-light);
 
 }
 
@@ -142,14 +144,26 @@ code {
    margin-right: auto;
    margin-left: auto;
 }
-.hidden { display:none; }
+
+.hidden { 
+  display:none; 
+}
 
 
 
-.display-flex { display:flex; }
-.display-block { display:block; }
-.display-inline-flex { display:inline-flex; }
-.display-inline-block { display:inline-block; }
+.display-flex { 
+  display:flex; 
+}
+.display-block { 
+  display:block; 
+}
+
+.display-inline-flex { 
+  display:inline-flex; 
+}
+.display-inline-block { 
+  display:inline-block; 
+}
 
 .flex-stretch { flex: 1 1 auto; }
 .flex-none { flex:none; }
@@ -267,25 +281,108 @@ hr {
 }
 
 /* Component Classes */
-.nav ul {
-   list-style-type:none;
-    
 
+
+
+
+header.navbar {
+  overflow: hidden;
+
+  position: fixed;
+  width: 100%;
+
+   background-color:var(--color-main-medium);
+   color:var(--color-alt-dark);
+   line-height:var(--header-height);
+}
+
+.navbar h1 {
+   font-size:1em;  
+   margin:0;
+}
+
+.navbar a {
+   float: left;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+
+   padding:14px 16px;
+}
+
+
+
+
+
+.nav ul {
+
+   list-style-type:none;
    padding-left:0;      
    background-color: var(--color-main-medium);
+ }
 
+  .nav a {
 
-}
-   .nav a {
       display:block;
       padding:0.2em 0.5em;
       margin: 1em;
    }
+
    .nav a:hover {
-      background-color:var(--color-main-light);
+
+      background-color:var(--color-main-dark);
       color: var(--color-white);
       text-decoration:none;
    }
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 
    .nav.crumbs ul,
    .nav.pills ul,
@@ -320,23 +417,10 @@ hr {
    }
 
 
-
-.navbar {
-   background-color:var(--color-main-dark);
-   color:var(--color-main-light);
-   line-height:var(--header-height);
+.site-action {
+      display: flex;
+      align-items: center;
 }
-.navbar h1 {
-   font-size:1em;  
-   margin:0;
-}
-.navbar a {
-   padding:0 0.5em;
-}
-
-
-
-
 
 
 .view-window {
@@ -641,16 +725,19 @@ margin-left: 10%;
 }
 
 footer {
-   position: fixed;
+
+
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  display: absolute;
+  height: 200px;
+  margin-top: -200px;
+  
 
-
-  background-color:var(--color-alt-dark);
+  background-color:var(--color-main-dark);
   color:var(--color-main-light);
-  line-height:var(--header-height);
+  line-height:var(--footer-height);
 
 }
 

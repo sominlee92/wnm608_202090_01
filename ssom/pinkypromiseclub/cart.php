@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>PPC : SHOP </title>
+	<title>CART</title>
    
    <?php include "parts/meta.php" ?>
 
@@ -20,7 +20,6 @@
 </div>
 
       <?php include "parts/footer.php" ?>
-
 
 </body>
 </html>

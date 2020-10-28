@@ -3,9 +3,6 @@
 :root {
 
 
-
-
-
     --color-main-light: #fff0f7;
     --color-main-medium: #ffa8d1;
     --color-main-dark: #ff004c;
@@ -14,11 +11,12 @@
     --color-alt-medium: #7aa7ff;
     --color-alt-dark: #00203f;
     
-    --color-warning: #003acc;
+    --color-warning: #b536ff;
     --color-error: #ff004c;
-    --color-purchase: #ffa8d1;
+    --color-purchase: #da9cff;
 
    --header-height:3rem;
+   --footer-height:4rem;
 }
 
 

@@ -16,20 +16,21 @@
       <?php include "parts/navbar.php" ?>
 
  <div class="view-window" style="background-image:url(img/example.jpg)">
+
       <h2> Pinky Promise Club </h2>
 </div>
 
 
 
    <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem50 -->
+ 
    <div class="container">
       <article id="article1" class="article card">
          <h2>Article 1</h2>
          <div class="article-body">
+            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum dolorum, alias fugit nemo, facilis nam. Maiores nostrum beatae velit tempora quos laudantium sit id, eos corporis aut alias hic libero. Veritatis veniam explicabo repellat tenetur, aut assumenda magnam consectetur facere minima ea fugiat. Magnam odio incidunt excepturi a voluptates.</p>
-            <p>Nisi beatae reprehenderit totam tenetur neque explicabo inventore repudiandae commodi consequatur debitis quibusdam illo assumenda sapiente ut eligendi quisquam corporis, at enim voluptates quo molestiae rem quaerat aspernatur quis! Minus delectus, mollitia explicabo doloremque quisquam tenetur molestias amet fuga. Asperiores quia quidem, iusto. Dicta ullam sapiente similique facilis, laudantium. Ipsam.</p>
-            <p>Exercitationem, fuga enim commodi molestias iure libero, delectus illo deserunt quaerat aperiam modi placeat omnis debitis corrupti hic, quas repellat nemo, saepe. Impedit, quasi odit error! Provident iure nesciunt unde sapiente nostrum inventore reprehenderit rem placeat excepturi enim tempora cumque harum esse ipsum dolorum, voluptas voluptate, rerum eius pariatur earum?</p>
-            <p>Fuga dolorum, et dolor, accusantium, doloribus quo quidem beatae minus nihil porro deserunt voluptatum perferendis, eius soluta quibusdam atque explicabo. Nobis, dicta unde illo veniam eius quia laboriosam iste possimus fuga nemo atque at ipsa perspiciatis sapiente iure excepturi ratione nisi iusto quibusdam magnam ab officia! Ex ipsam, officiis cum.</p>
+
          </div>
       </article>
 
@@ -91,16 +92,11 @@
             <p>Excepturi culpa quos totam sapiente porro alias voluptas nemo magni, exercitationem perspiciatis? Minima incidunt accusamus nam, reprehenderit dolore. Praesentium, ipsum optio sint dolorem eos nobis. Incidunt maxime eligendi recusandae ipsa voluptate dicta cum ea, ullam molestiae rerum, vel assumenda cumque voluptatem saepe facilis quidem. Recusandae consequuntur harum, totam minima animi.</p>
          </div>
       </article>
+
+            <?php include "parts/footer.php" ?>
+
    </div>
 
-   <footer class="footer">
-     
-
-         
-         <h4> Styleguide of Pinky Promise Club Footer</h4>
-
-
-   </footer>
 
 
 </body>

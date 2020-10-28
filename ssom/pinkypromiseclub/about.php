@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>PPC : SHOP </title>
+	<title>PPC : ABOUT</title>
    
    <?php include "parts/meta.php" ?>
 
@@ -18,6 +18,7 @@
  <div class="view-window" style="background-image:url(img/example.jpg)">
       <h2> Pinky Promise Club </h2>
 </div>
+
 
       <?php include "parts/footer.php" ?>
 

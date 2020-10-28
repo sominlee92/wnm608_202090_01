@@ -1,38 +1,36 @@
 
-<script>
-
-      const makeNav = (classes='') => {
-         const links = ['HOME','ABOUT','STORE','SALE','CART'];
-         document.write(`
-         <div>
-         <nav class="${classes}">
-            <ul>
-               ${links.reduce((r,o,i)=>r+`<li><a href="#">${o}</a></li>`,'')}
-            </ul>
-         </nav>
-         </div>
-         `)
-      }
-      </script>
-
 
 <header class="navbar">
 
    <div class="container display-flex flex-align-center">
-
-      <div class="flex-none">
-
-         <img src="img/logo.png" width="200px">
-      </div>
-
-
-      <div class="flex-stretch"></div>
       
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
       <nav class="nav flex-none">
 
-                 <script>makeNav('nav pills')</script>
+         <ul class="display-flex">
 
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="about.php">ABOUT</a></li>
+           
+            <div class="dropdown">
+               <button class="dropbtn"> SHOP </button>
+
+               <div class="dropdown-content">
+                  <a href="product_list.php"> CLOTHES</a>
+                  <a href="product_list.php"> COSMETICS</a>
+                  <a href="product_list.php"> STATIONARY</a>
+                  <a href="product_list.php"> HOME</a>
+
+               </div>
+
+            </div>
+    
+           <div class="site-action">
+               <li><a href="cart.php"> <img src="img/cart1.svg" width="30px"> </a></li>
+               <li><a href=#> <img src="img/search1.svg" width="30px"> </a></li>
+            </div>
+
+         </ul>
 
       </nav>
 
