@@ -5,7 +5,7 @@
    <div class="container display-flex flex-align-center">
       
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
-      <nav class="nav flex-none">
+      <nav class="nav">
 
          <ul class="display-flex">
 
@@ -13,19 +13,20 @@
             <li><a href="about.php">ABOUT</a></li>
            
             <div class="dropdown">
+
                <button class="dropbtn"> SHOP </button>
 
                <div class="dropdown-content">
                   <a href="product_list.php"> CLOTHES</a>
                   <a href="product_list.php"> COSMETICS</a>
                   <a href="product_list.php"> STATIONARY</a>
-                  <a href="product_list.php"> HOME</a>
+                  <a href="product_list.php"> LIFE STYLE</a>
 
                </div>
 
             </div>
     
-           <div class="site-action">
+           <div class="nav-right">
                <li><a href="cart.php"> <img src="img/cart1.svg" width="30px"> </a></li>
                <li><a href=#> <img src="img/search1.svg" width="30px"> </a></li>
             </div>
@@ -36,4 +37,3 @@
 
    </div>
 </header>
-
