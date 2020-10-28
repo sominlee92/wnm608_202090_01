@@ -5,6 +5,42 @@ include "../lib/php/functions.php";
 $users = file_get_json("users.json");
 
 
+
+
+
+
+function showUserPage($user) {
+
+$classes = implode(", ", $user->classes);
+
+echo <<<HTML
+<nav class="nav crumbs">
+   <ul>
+      <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
+   </ul>
+</nav>
+<div>
+   <h2>$user->name</h2>
+   <div>
+      <strong>Type</strong>
+      <span>$user->type</span>
+   </div>
+   <div>
+      <strong>Email</strong>
+      <span>$user->email</span>
+   </div>
+   <div>
+      <strong>Classes</strong>
+      <span>$classes</span>
+   </div>
+</div>
+HTML;
+}
+
+
+
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +73,7 @@ $users = file_get_json("users.json");
 
          if(isset($_GET['id'])) {
 
-            echo $_GET['id'];
+            showUserPage($users[$_GET['id']]);
 
          } else {
 
