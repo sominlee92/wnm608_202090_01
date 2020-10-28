@@ -17,10 +17,10 @@
                <button class="dropbtn"> SHOP </button>
 
                <div class="dropdown-content">
-                  <a href="product_list.php"> CLOTHES</a>
-                  <a href="product_list.php"> COSMETICS</a>
-                  <a href="product_list.php"> STATIONARY</a>
-                  <a href="product_list.php"> LIFE STYLE</a>
+                  <a href="product_list.php?id=clothes"> CLOTHES</a>
+                  <a href="product_list.php?id=cosmetics"> COSMETICS</a>
+                  <a href="product_list.php?id=stationary"> STATIONARY</a>
+                  <a href="product_list.php?id=lifestyle"> LIFE STYLE</a>
 
                </div>
 

@@ -26,21 +26,28 @@
 
    <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem50 -->
 
- <div class="view-window" style="background-image:url(img/example.jpg)"></div>
+ <div class="view-window" style="background-image:url(img/background.png)"></div>
+
+      <img src="img/example.jpg" class="picture-frame"> 
+
 
    <div class="container">
+      
 
-      <div class="card hard light display-flex">
+      <div class="card light display-flex">
+
 
 
          <article id="article1" class="article flex-stretch">
 
-            <img src="img/logo_back.jpg" width="100%">
-            <h2> We sell Pink </h2>
 
             <div class="article-body">
 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum dolorum, alias fugit nemo, facilis nam. Maiores nostrum beatae velit tempora quos laudantium sit id, eos corporis aut alias hic libero. Veritatis veniam explicabo repellat tenetur, aut assumenda magnam consectetur facere minima ea fugiat. Magnam odio incidunt excepturi a voluptates.</p>
+
+             <h2> We like pink so, we sell pink. </h2>
+
+
+               <p> Pinky Promise Club is the place that sells your favorite color Pink. We find out and bring everything pink in the world to you. Do what makes you pink.</p>
 
             </div>
 
@@ -51,6 +58,7 @@
 
 
 
+ <div class="view-window" style="background-image:url(img/background.png)"></div>
 
 
    <div class="container">
@@ -115,6 +123,7 @@
    </div>
 
 
+ <div class="view-window" style="background-image:url(img/background.png)"></div>
 
 
 

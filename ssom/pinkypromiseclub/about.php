@@ -24,6 +24,13 @@
 
             <div class="article-body">
 
+               <p>Life is too short to be happy with your favorites. Do what makes you happy. Buy what makes you happy.</p>
+
+            </div>
+
+
+            <div class="article-body">
+
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum dolorum, alias fugit nemo, facilis nam. Maiores nostrum beatae velit tempora quos laudantium sit id, eos corporis aut alias hic libero. Veritatis veniam explicabo repellat tenetur, aut assumenda magnam consectetur facere minima ea fugiat. Magnam odio incidunt excepturi a voluptates.</p>
 
             </div>

@@ -35,7 +35,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255);
     padding: 1em;
     color: #ffa8d1;
     font-size: 3em;

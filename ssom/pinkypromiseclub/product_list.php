@@ -15,53 +15,121 @@
 
     <?php include "parts/navbar.php" ?>
 
+ <div class="view-window" style="background-image:url(img/background.png)">
+        
+          <h2> CLOTHES</h2>
+
+ </div>
 
 
 
- 	<div class="container">
 
-    	
-        	<h2>Clothes</h2>
-            
-            <div class="grid">
-
-            <!-- li*10>a[href='product_item.php?id=$']>{Product $} -->
+   <div class="container">
 
 
-            	<div class="col-xs-8 col-md-4 col-xl-12">
-           			
-           			<div class="well">
-					<a href="product_item.php?id=1">Product 1</a>
-            		</div>
+        <div class="product-list">
 
-            	</div>
-
-            	<div class="col-xs-8 col-md-4 col-xl-12">
-           			
-           			<div class="well">
-
-            		<a href="product_item.php?id=2">Product 2</a>
+        <div class="grid gap">
 
 
-            		</div>
-
-            	</div>
+            <div class="col-xs-6 col-md-12 col-xl-6">
 
 
-            <div class="col-xs-8 col-md-4 col-xl-12">
-            	 	<div class="well">
-            		<a href="product_item.php?id=3">Product 3</a>
+              <a href="product_item.php?id=1">
+
+                  <div class="card hard">
+
+                    <img src="img/bag.jpg" width="100%">
+
+                    <p class="itemtitle"> Product Name</p>
+                    <p class="itemprice"> Product Price</p>
+    
+
+                  </div>
+              </a>
 
 
-            	</div>
 
-            	</div>
+              <a href="product_item.php?id=3">
+                
+                  <div class="card hard">
+
+                    <img src="img/bag.jpg" width="100%">
+
+                    <p class="itemtitle">kanken Mini Backpack</p>
+                    <p class="itemprice">$ 80.00</p>
+    
+
+                  </div>
+
+              </a>
+
+              <a href="product_item.php?id=5">
+
+                <div class="card hard">
+
+                    <img src="img/bag.jpg" width="100%">
+
+                    <p class="itemtitle">kanken Mini Backpack</p>
+                    <p class="itemprice">$ 80.00</p>
+
+                </div>
+              </a>
 
 
-         	</div>
 
-        </div>
+            </div>
+
+            <div class="col-xs-6 col-md-12 col-xl-6">
+
+                <a href="product_item.php?id=2">
+                  <div class="card hard">
+
+                    <img src="img/bag.jpg" width="100%">
+
+                    <p class="itemtitle">kanken Mini Backpack</p>
+                    <p class="itemprice">$ 80.00</p>
+    
+
+                  </div>
+                </a>
+
+                <a href="product_item.php?id=4">
+
+                 <div class="card hard">
+
+                    <img src="img/bag.jpg" width="100%">
+
+                    <p class="itemtitle">kanken Mini Backpack</p>
+                    <p class="itemprice">$ 80.00</p>
+    
+
+                  </div>   
+                </a>
+             <a href="product_item.php?id=6">
+                <div class="card hard">
+
+                  <img src="img/bag.jpg" width="100%">
+
+                    <p class="itemtitle">kanken Mini Backpack</p>
+                    <p class="itemprice">$ 80.00</p>
+    
+
+                </div>                 
+             </a>
+
+
+            </div>
+
+
+
+
+
+       </div>
+
+       </div>
    </div>
+
 
       <?php include "parts/footer.php" ?>
 
