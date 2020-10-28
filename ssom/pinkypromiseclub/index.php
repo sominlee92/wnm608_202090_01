@@ -21,39 +21,43 @@
 
 
 
-<div class="nav-space">
-</div>
 
 
 
    <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem50 -->
- 
-   <div class="container">
 
-      <article id="article1" class="article card">
-
-         <h2> We sell Pink </h2>
-
-         <div class="article-body">
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum dolorum, alias fugit nemo, facilis nam. Maiores nostrum beatae velit tempora quos laudantium sit id, eos corporis aut alias hic libero. Veritatis veniam explicabo repellat tenetur, aut assumenda magnam consectetur facere minima ea fugiat. Magnam odio incidunt excepturi a voluptates.</p>
-
-         </div>
-
-      </article>
-
-   </div>
-
-
-
-
-   </div>
+ <div class="view-window" style="background-image:url(img/example.jpg)"></div>
 
    <div class="container">
 
       <div class="card hard light display-flex">
 
-         <article id="article2" class="article flex-stretch" style="width:50%">
+
+         <article id="article1" class="article flex-stretch">
+
+            <img src="img/logo_back.jpg" width="100%">
+            <h2> We sell Pink </h2>
+
+            <div class="article-body">
+
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum dolorum, alias fugit nemo, facilis nam. Maiores nostrum beatae velit tempora quos laudantium sit id, eos corporis aut alias hic libero. Veritatis veniam explicabo repellat tenetur, aut assumenda magnam consectetur facere minima ea fugiat. Magnam odio incidunt excepturi a voluptates.</p>
+
+            </div>
+
+         </article>
+
+      </div>
+   </div>
+
+
+
+
+
+   <div class="container">
+
+      <div class="card hard light display-flex">
+
+         <article id="article2" class="article flex-stretch" >
            
             <h2>Our Favorite</h2>
            
@@ -77,16 +81,13 @@
 
       </div>
 
-   <div class="container">
 
-  
-   
-   </div>
 
 
 
    </div>
 
+ <div class="view-window" style="background-image:url(img/example.jpg)"></div>
 
 
   <?php include "parts/footer.php" ?>

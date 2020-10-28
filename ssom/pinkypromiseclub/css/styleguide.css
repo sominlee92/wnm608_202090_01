@@ -207,8 +207,8 @@ hr {
 
 }
 
-.nav-space {
-  margin-top: 
+.space {
+  margin-top: 10%;
 }
 
 .button1 { background-color:var(--color-main-light);
@@ -652,7 +652,7 @@ padding: 0.2em;
     background-color: transparent;
     font:inherit;
     padding: 0.5em 1em;
-    border-bottom: 1px solid var(--color-alt-dark);
+    border-bottom: 1px solid var(--color-alt-medium);
     outline: 0;
 }
 
@@ -660,6 +660,7 @@ padding: 0.2em;
 .form-control {
     margin: 1em 0;
 }
+
 .form-label {
     font-size: 0.8em;
     font-weight: 700;
@@ -775,7 +776,7 @@ padding: 0.2em;
 
 .footer-inside 
 {
-margin-left: 10%;
+margin-left: 3%;
 }
 
 footer {
@@ -785,13 +786,18 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 18%;
   margin-top: 200px;
+  margin-bottom: -18%;
   
 
-  background-color:var(--color-main-dark);
-  color:var(--color-main-light);
-  line-height:var(--footer-height);
+  background-color:var(--color-main-light);
+  color:var(--color-alt-medium);
 
 }
 
+
+
+.footer-grid {
+  margin: 2em;
+}
