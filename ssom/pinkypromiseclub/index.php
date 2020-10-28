@@ -55,31 +55,64 @@
 
    <div class="container">
 
-      <div class="card hard light display-flex">
 
-         <article id="article2" class="article flex-stretch" >
            
-            <h2>Our Favorite</h2>
            
-            <div class="article-body">
+         <div class="article-body">
+         <h1>Our Favorite</h1>
 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eum, nam voluptates illum dolore sit repudiandae ullam, suscipit, fugiat necessitatibus sapiente aspernatur facere laudantium illo, voluptatibus esse veniam deleniti ab! Qui, ratione dolores. Modi harum iure sunt dicta vel labore omnis provident voluptatum ipsum enim temporibus, pariatur? Asperiores, beatae deleniti.</p>
-               <p>Harum magnam eos repellendus quisquam sint optio nam omnis in! Voluptatum eligendi esse soluta laboriosam mollitia quidem, temporibus, iusto maxime libero possimus. Maiores culpa autem itaque veniam, aliquam atque eius, amet iste suscipit error exercitationem numquam eveniet facere. Saepe corrupti cum, alias aut, facere soluta architecto omnis deserunt maiores possimus?</p>
-              
+            <div class="grid gap">
+       
+               <div class="col-xs-12 col-md-4">
+               
+               <div class="card hard">
+
+                  <img src="img/bag.jpg" width="100%">
+
+                  <p class="itemtitle">kanken Mini Backpack</p>
+                  <p class="itemprice">$ 80.00</p>
+               
+
+                  <a href="product_item.php?id=1">
+                      <button class="button button5">Buy Now</button>
+                  </a>
+
+
+               </div>
+
+               </div>
+
+               <div class="col-xs-12 col-md-4">
+               
+               <div class="card hard">
+                  
+                  <img src="img/teddy.jpg" width="100%">
+                 
+                  <p class="itemtitle">Carebear 12" Plush</p>
+                  <p class="itemprice">$ 24.99</p>
+                  
+                  <button class="button button5">Buy Now</button>
+
+               </div>
+
+               </div>
+
+               <div class="col-xs-12 col-md-4">
+               <div class="card hard"> 
+                  <img src="img/converse.jpg" width="100%">
+                  <p class="itemtitle">Converse Chuck Taylor High</p>
+                  <p class="itemprice">$ 55.00</p>
+
+
+                  <button class="button button5">Buy Now</button>
+
+               </div>
+               </div>
             </div>
 
-
-         </article>
-
-
-         <div class="flex-stretch display-flex flex-align-center flex-justify-center" style="width:50%">
-
-            <img src="img/note20_001.png" alt="">
-
+              
          </div>
-
-
-      </div>
+   </div>
 
 
 
@@ -87,7 +120,6 @@
 
    </div>
 
- <div class="view-window" style="background-image:url(img/example.jpg)"></div>
 
 
   <?php include "parts/footer.php" ?>

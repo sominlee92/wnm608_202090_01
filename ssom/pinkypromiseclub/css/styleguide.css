@@ -75,7 +75,7 @@ body {
    font-family: brandon-grotesque, sans-serif;
    font-weight: 400;
    color:#00203f;
-   background-color: var(--color-main-light);
+   background-color: var(--color-main-medium);
 
 }
 
@@ -172,6 +172,26 @@ code {
 .flex-justify-center { justify-content:center; }
 
 
+
+
+.article-body {
+
+margin-top: 4em;
+margin-bottom: 8em;
+
+
+}
+
+.article-body>p {
+  padding-left: 3em;
+  padding-right: 3em;
+
+}
+
+.article-body>h2{
+padding-left: 2em;
+
+}
 hr {
     display: block;
     unicode-bidi: isolate;
@@ -250,22 +270,21 @@ hr {
 
 .button4 { 
   background-color:var(--color-main-medium);
-  padding: 10px 40px;
+  padding: 0.8em 3em;
   font-size: 20px;
-  margin-right: 1.3em;
+  margin-right:auto;
+  margin-left: auto;
 }
 
 
 .button4:hover {
-          background-color:var(--color-main-dark);
-         color:var(--color-main-light);
-           padding: 10px 40px;
+        background-color:var(--color-main-dark);
+        color:var(--color-main-light);
+        padding: 0.8em 3em;
         font-size: 20px;
-                  margin-right: 1.3em;
-
-
-
-         
+       margin-right: 1.3em;  
+       margin-right:auto;
+      margin-left: auto;
 }
 
 .nav {
@@ -273,17 +292,27 @@ hr {
 }
 
 
-.button5 { background-color:var(--color-main-dark);
-          color:var(--color-alt-light);
-            padding: 10px 40px;
+.button5 { 
+  width: 100%;
+  background-color:var(--color-main-dark);
+  color:var(--color-alt-light);
+  padding: 0.8em 4em;
   font-size: 20px;
+  margin-right:auto;
+  margin-left: auto;
+
 }
 
 
-.button5:hover{ background-color:var(--color-alt-dark);
-          color:var(--color-alt-light);
-            padding: 10px 40px;
+.button5:hover{ 
+    width: 100%;
+
+  background-color:var(--color-alt-dark);
+  color:var(--color-alt-light);
+  padding: 0.8em 4em;
   font-size: 20px;
+  margin-right:auto;
+  margin-left: auto;
 }
 
 /* Component Classes */
