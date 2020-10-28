@@ -473,6 +473,7 @@ li.dropdown {
 
 .nav-right {
       float: right;
+      margin-left: auto;
 }
 
 
