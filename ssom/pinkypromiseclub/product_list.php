@@ -13,11 +13,11 @@
 
 <body>
 
-    <?php include "parts/navbar.php" ?>
+  <?php include "parts/navbar.php" ?>
 
- <div class="view-window" style="background-image:url(img/background.png)">
+  <div class="view-window" style="background-image:url(img/background.png)">
         
-          <h2> CLOTHES</h2>
+  <h2> CLOTHES</h2>
 
  </div>
 
