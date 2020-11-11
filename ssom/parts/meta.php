@@ -1,5 +1,4 @@
 
-<base href="/aau/wnm608_202090_01/ssom/">
 
 
 <meta charset="UTF-8">
