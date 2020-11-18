@@ -29,7 +29,7 @@ return $r.<<<HTML
       <img src="/images/store/$o->image_thumb">
    </div>
    <div class="flex-stretch">
-      <strong>$o->title</strong>
+      <strong>$o->name</strong>
       <div>Delete</div>
    </div>
    <div class="flex-none">

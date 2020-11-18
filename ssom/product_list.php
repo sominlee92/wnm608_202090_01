@@ -36,15 +36,14 @@ include_once "parts/templates.php";
 
         <div class="product-list">
 
-
-          <ul>
-            
+          <div class="grid gap">
+ 
             <?php
 
             echo array_reduce(
                MYSQLIQuery("
                   SELECT *
-                  FROM products
+                  FROM product
                   ORDER BY date_create DESC
                   LIMIT 12
                "),
@@ -52,9 +51,7 @@ include_once "parts/templates.php";
             );
 
             ?>
-
-          </ul>
-
+          </div>
 
 
 

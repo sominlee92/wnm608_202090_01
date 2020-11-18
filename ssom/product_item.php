@@ -3,7 +3,7 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-$product = MYSQLIQuery("SELECT * FROM products WHERE id = {$_GET['id']}")[0];
+$product = MYSQLIQuery("SELECT * FROM product WHERE id = {$_GET['id']}")[0];
 
 $thumbs = explode(",",$product->image_other);
 
@@ -15,6 +15,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 <html>
 
 <head>
+
 	<title>PPC Product_item</title>
    
    <?php include "parts/meta.php" ?>
@@ -29,7 +30,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
    
 
-	<div class="container" id="select">
+	<!-- <div class="container" id="select">
 
 
          <div class="card light">
@@ -100,7 +101,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
          
          </div>
 
-      </div>
+      </div> -->
 
    <?php include "parts/footer.php" ?>
 
