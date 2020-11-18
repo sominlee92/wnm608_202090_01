@@ -65,27 +65,19 @@ body {
 
 /* Product List Design */
 
-
-.product-list>ul{
-text-decoration:none;
-color: var(--color-alt-dark);
-
-
-}
-
-.product-list>li{
-text-decoration:none;
-color: var(--color-alt-dark);
-
-}
-
 .product-item {
     margin: 0;
+    margin-top: 2.5em;
     border-radius:0.7em;
-    background-color:white;
+    background-color: var(--color-main-light);
     box-shadow:1px 1px 4px rgba(0,0,0,0.2);
     padding:1em;
     transition:all 0.3s;
+    display:block;
+    height:100%;
+}
+.product-item figure {
+  margin:0;
 }
 .product-item:hover {
     box-shadow:1px 1px 12px rgba(0,0,0,0.4);
@@ -106,6 +98,54 @@ a:hover .product-item {
 }
 .product-title {
     font-size: 0.9em;
+}
+
+.product-image {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 80%;
+}
+.image-main {
+  position:relative;
+  height:0;
+  overflow:hidden;
+  padding-bottom:60%;
+}
+.image-main img,
+.product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+b
+.image-thumbs img {
+  width:120px;
+  height:120px;
+  object-fit:cover;
+}
+
+
+
+
+.navbar {
+  margin-bottom:1em;
+}
+
+
+
+
+
+.card :first-child,
+.card-section :first-child {
+  margin-top:0;
 }
 
 
