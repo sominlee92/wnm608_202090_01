@@ -1,4 +1,17 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+$product = MYSQLIQuery("SELECT * FROM products WHERE id = {$_GET['id']}")[0];
+
+$thumbs = explode(",",$product->image_other);
+
+$thumbs_elements = array_reduce($thumbs,function($r,$o){
+   return $r."<img src='/images/store/$o'>";
+});
+
+?><!DOCTYPE html>
 <html>
 
 <head>
