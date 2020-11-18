@@ -24,7 +24,7 @@ include_once "parts/templates.php";
 
   <div class="view-window" style="background-image:url(img/background.png)">
         
-  <h2> SHOP</h2>
+  <h2> Shop</h2>
 
  </div>
 
@@ -38,16 +38,18 @@ include_once "parts/templates.php";
 
 
           <ul>
-             <?php
+            
+            <?php
 
-            $conn = makeConn();
-
-            $result = @$conn->query("SELECT * FROM product");
-            if($conn->errno) die($conn->error);
-
-            while($row = $result->fetch_object()) {
-               echo "<li>$row->name</li>";
-            }
+            echo array_reduce(
+               MYSQLIQuery("
+                  SELECT *
+                  FROM products
+                  ORDER BY date_create DESC
+                  LIMIT 12
+               "),
+               'makeProductList'
+            );
 
             ?>
 

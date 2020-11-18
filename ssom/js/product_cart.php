@@ -9,26 +9,15 @@ $cart = MYSQLIQuery("SELECT * FROM products WHERE id in (5,9,13)");
 
 
 ?><!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>CART</title>
-   
+   <title>Product Cart</title>
+
    <?php include "parts/meta.php" ?>
-
 </head>
-
-
-
-
 <body>
-
-      <?php include "parts/navbar.php" ?>
-
- <div class="view-window" style="background-image:url(img/background.png)">
-
-</div>
-
+   
+   <?php include "parts/navbar.php" ?>
 
 
    <div class="container">
@@ -44,9 +33,6 @@ $cart = MYSQLIQuery("SELECT * FROM products WHERE id in (5,9,13)");
          <div><a href="product_checkout.php">Checkout</a></div>
       </div>
    </div>
-
-
- <?php include "parts/footer.php" ?>
 
 </body>
 </html>

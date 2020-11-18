@@ -12,8 +12,8 @@ function file_get_json($filename) {
 }
 
 
-function makeConn() {
-   include "auth.php";
+function MYSQLIConn() {
+   include_once "auth.php";
 
    @$conn = new mysqli(...MYSQLIAuth());
 
@@ -22,4 +22,19 @@ function makeConn() {
    $conn->set_charset('utf8');
 
    return $conn;
+}
+
+
+function MYSQLIQuery($sql) {
+   $conn = MYSQLIConn();
+
+   $a = [];
+
+   $result = $conn->query($sql);
+   if($conn->errno) die($conn->error);
+
+   while($row = $result->fetch_object())
+      $a[] = $row;
+
+   return $a;
 }

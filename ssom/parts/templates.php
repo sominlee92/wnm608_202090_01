@@ -12,7 +12,7 @@ return $r.<<<HTML
          </div>
          <figcaption class="product-description">
             <div class="product-price">&dollar;$o->price</div>
-            <div class="product-title">$o->title</div>
+            <div class="product-name">$o->name</div>
          </figcaption>
       </figure>
    </a>
