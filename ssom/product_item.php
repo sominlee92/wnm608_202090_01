@@ -30,6 +30,61 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
    
 
+   <div class="container">
+      <div class="grid gap">
+        
+         <div class="col-xs-12 col-md-7"> 
+            <div class="card soft">
+  
+               <div class="image-main">
+                  <img src="/images/store/<?= $product->image_thumb ?>" alt="">
+               </div>
+
+               <div class="image-thumbs">
+                  <?= $thumbs_elements ?>
+               </div>
+
+            </div>
+         </div>
+
+         <div class="col-xs-12 col-md-5">
+            <div class="card soft flat">
+
+               <div class="card-section">
+                  <h2><?= $product->name ?></h2>
+                  <div>&dollar;<?= $product->price ?></div>
+               </div>
+
+               <div class="card-section">
+                  <a href="added_to_cart.php" class="form-button">Add To Cart</a>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+
+      <div class="card soft medium">
+         <p><?= $product->description ?></p>
+      </div>
+         <h2>Related Products</h2>
+
+         <div class="grid gap">
+           
+            <?php
+
+            echo array_reduce(
+               MYSQLIQuery("
+                  SELECT *
+                  FROM product
+                  WHERE id in (4,6,8)
+               "),
+               'makeProductList'
+            );
+
+            ?>
+         </div>
+   </div>
 	<!-- <div class="container" id="select">
 
 
