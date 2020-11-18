@@ -2,9 +2,7 @@
 
 include_once "lib/php/functions.php";
 
-?>
-
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html>
 
 <head>
@@ -34,6 +32,25 @@ include_once "lib/php/functions.php";
 
 
         <div class="product-list">
+
+
+          <ul>
+             <?php
+
+            $conn = makeConn();
+
+            $result = @$conn->query("SELECT * FROM product");
+            if($conn->errno) die($conn->error);
+
+            while($row = $result->fetch_object()) {
+               echo "<li>$row->name</li>";
+            }
+
+            ?>
+
+          </ul>
+
+
 
         <div class="grid gap">
 
