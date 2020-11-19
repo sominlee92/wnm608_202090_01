@@ -3,8 +3,11 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-$cart = MYSQLIQuery("SELECT * FROM products WHERE id in (5,9,13)");
 
+
+$cart = getCartItems();
+
+//print_p($cart);
 
 
 

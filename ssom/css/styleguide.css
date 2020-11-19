@@ -229,6 +229,13 @@ hr {
 
 
 
+.margin-box {
+  width: 100%;
+  height: 500px;
+  margin-top: 2em;
+}
+
+
 .button {
 
   font-family: brandon-grotesque, sans-serif;
@@ -744,8 +751,8 @@ padding: 0.2em;
     font: inherit;
     border-radius: 0.3em;
     padding: 0.5em 1em;
-    background-color: var(--color-neutral-light);
-    text-align: center;
+    background-color: var(--color-alt-medium);
+        text-align: center;
     text-decoration: none;
     cursor: pointer;
     outline: 0;

@@ -12,7 +12,7 @@ return $r.<<<HTML
          </div>
          <figcaption class="product-description">
             <div class="product-price">&dollar;$o->price</div>
-            <div class="product-name">$o->name</div>
+            <div class="product-title">$o->name</div>
          </figcaption>
       </figure>
    </a>
@@ -22,18 +22,39 @@ HTML;
 
 
 
+
+function selectAmount($amount=1,$total=10) {
+   $output = "<select name='product-amount'>";
+   for($i-1;$i<=$total;$i++) {
+      $output .= "<option ".($i==$amount?'selected':'').">$i</option>";
+   }
+   $output .= "</select>";
+   return $output;
+}
+
+
+
+
 function makeCartList($r,$o) {
+$totalfixed = number_format($o->total,2,'.','');
+$selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex">
    <div class="flex-none image-thumbs">
       <img src="/images/store/$o->image_thumb">
    </div>
    <div class="flex-stretch">
-      <strong>$o->name</strong>
+      <strong>$o->title</strong>
       <div>Delete</div>
    </div>
    <div class="flex-none">
-      &dollar;$o->price
+      <div>&dollar;$totalfixed</div>
+      <form action="product_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
+         <input type="hidden" name="product-id" value="$o->id">
+         <div class="form-select">
+            $selectamount
+         </div>
+      </form>
    </div>
 </div>
 HTML;
