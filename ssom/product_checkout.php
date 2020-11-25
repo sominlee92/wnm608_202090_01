@@ -18,7 +18,17 @@ include_once "lib/php/functions.php";
 
    <?php include "parts/navbar.php" ?>
 
-   
+	   
+	 <div class="container">
+     	<div class="card soft">
+         <h2>Product Checkout</h2>
+
+         <a href="./">Cancel</a>
+
+         <div>Fill in your information</div>
+         <div><a href="product_actions.php?action=reset-cart">Pay</a></div>
+      </div>
+   </div>
 
    <?php include "parts/footer.php" ?>
 

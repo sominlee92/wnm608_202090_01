@@ -26,9 +26,10 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
    <div class="container">
       <div class="grid gap">
          <div class="col-xs-12 col-md-7">
+
             <div class="card soft">
                <div class="image-main">
-                  <img src="/images/store/<?= $product->image_thumb ?>" alt="">
+                  <img src="/img/store/<?= $product->image_thumb ?>" alt="">
                </div>
                <div class="image-thumbs">
                   <?= $thumbs_elements ?>

@@ -8,7 +8,7 @@ return $r.<<<HTML
    <a href="product_item.php?id=$o->id" class="product-item">
       <figure>
          <div class="product-image">
-            <img src="/images/store/$o->image_thumb" alt="">
+            <img src="/aau/wnm608_202090_01/ssom/img/store/$o->image_thumb" alt="">
          </div>
          <figcaption class="product-description">
             <div class="product-price">&dollar;$o->price</div>
@@ -56,6 +56,36 @@ return $r.<<<HTML
          </div>
       </form>
    </div>
+</div>
+HTML;
+}
+
+
+function cartTotals() {
+
+$cart = getCartItems();
+
+$cartprice = array_reduce($cart,function($r,$o){return $r+$o->total;},0);
+
+$pricefixed = number_format($cartprice,2,'.','');
+$tax = number_format($cartprice*0.0725,2,'.','');
+$taxed = number_format($cartprice*1.0725,2,'.','');
+
+return <<<HTML
+<div class="card-section display-flex">
+   <div class="flex-stretch"><strong>Sub Total</strong></div>
+   <div class="flex-none">&dollar;$cartprice</div>
+</div>
+<div class="card-section display-flex">
+   <div class="flex-stretch"><strong>Taxes</strong></div>
+   <div class="flex-none">&dollar;$tax</div>
+</div>
+<div class="card-section display-flex">
+   <div class="flex-stretch"><strong>Total</strong></div>
+   <div class="flex-none">&dollar;$taxed</div>
+</div>
+<div class="card-section">
+   <a href="product_checkout.php" class="form-button">Checkout</a>
 </div>
 HTML;
 }

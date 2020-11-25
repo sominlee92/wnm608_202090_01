@@ -30,15 +30,12 @@ include_once "lib/php/functions.php";
 
    <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem50 -->
 
- <div class="view-window" style="background-image:url(img/background.png)"></div>
-
-      <img src="img/example.jpg" class="picture-frame"> 
+ <div class="view-window" style="background-image:url(img/image01.jpg)"></div>
 
 
    <div class="container">
       
 
-      <div class="card light display-flex">
 
 
 
@@ -57,12 +54,11 @@ include_once "lib/php/functions.php";
 
          </article>
 
-      </div>
    </div>
 
 
 
- <div class="view-window" style="background-image:url(img/background.png)"></div>
+ <div class="view-window" style="background-image:url(img/image02.jpg)"></div>
 
 
    <div class="container">

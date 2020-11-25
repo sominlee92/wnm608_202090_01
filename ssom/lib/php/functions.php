@@ -47,9 +47,6 @@ function MYSQLIQuery($sql) {
 
 
 
-
-
-
 //  CART FUNCTIONS
 
 function array_find($array,$fn) {
@@ -104,4 +101,15 @@ function getCartItems() {
       $o->total = $p->amount * $o->price;
       return $o;
    },$products);
+}
+
+
+function makeCartBadge() {
+   $cart = getCart();
+   if(count($cart)==0) {
+      return "";
+   } else {
+      // return count($cart);
+      return array_reduce($cart,function($r,$o){return $r+$o->amount;});
+   }
 }

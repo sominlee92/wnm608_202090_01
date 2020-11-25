@@ -19,14 +19,14 @@ include_once "lib/php/functions.php";
 
       <?php include "parts/navbar.php" ?>
 
- 		<div class="view-window" style="background-image:url(img/example.jpg)">
-      	<h2> We are Pinky Promise Club !</h2>
+ 		<div class="view-window" style="background-image:url(img/logo_back.jpg)">
 		</div>
 
 		<div class="container">
 
 
             <div class="article-body">
+            <h2> We are Pinky Promise Club !</h2>
 
                <p>Life is too short to be happy with your favorites. Do what makes you happy. Buy what makes you happy.</p>
 
