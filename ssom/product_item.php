@@ -73,9 +73,11 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                         </select>
                      </div>
                   </div>
+
                   <div class="form-control">
                      <input type="submit" class="form-button" value="Add To Cart">
                   </div>
+
                </div>
             </form>
          </div>
@@ -83,6 +85,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       <div class="card soft medium">
          <p><?= $product->description ?></p>
       </div>
+      
          <h2>Related Products</h2>
 
          <div class="grid gap">
