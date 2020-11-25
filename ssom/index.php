@@ -60,7 +60,6 @@ include_once "parts/templates.php";
 
 
 
- <div class="view-window" style="background-image:url(img/image02.jpg)"></div>
 
 
    <div class="container">
@@ -92,7 +91,7 @@ include_once "parts/templates.php";
    </div>
 
 
- <div class="view-window" style="background-image:url(img/background.png)"></div>
+ <div class="view-window" style="background-image:url(img/image02.jpg)"></div>
 
 
 
