@@ -1,6 +1,8 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
 
 ?><!DOCTYPE html>
 <html>
@@ -69,7 +71,22 @@ include_once "lib/php/functions.php";
          <div class="article-body">
          <h1>Our Favorite</h1>
 
+            <div class="grid gap">
+ 
+            <?php
 
+            echo array_reduce(
+               MYSQLIQuery("
+                  SELECT *
+                  FROM product
+                  ORDER BY date_create DESC
+                  LIMIT 3
+               "),
+               'makeProductList'
+            );
+
+            ?>
+          </div>
               
          </div>
    </div>
