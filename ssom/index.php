@@ -45,7 +45,7 @@ include_once "lib/php/functions.php";
             <div class="article-body">
 
 
-             <h2> We like pink so, we sell pink. </h2>
+             <h2> Welcome to Pinky Promise Club! </h2>
 
 
                <p> Pinky Promise Club is the place that sells your favorite color Pink. We find out and bring everything pink in the world to you. Do what makes you pink.</p>
@@ -69,54 +69,6 @@ include_once "lib/php/functions.php";
          <div class="article-body">
          <h1>Our Favorite</h1>
 
-            <div class="grid gap">
-       
-               <div class="col-xs-12 col-md-4">
-               
-               <div class="card hard">
-
-                  <img src="img/bag.jpg" width="100%">
-
-                  <p class="itemtitle">kanken Mini Backpack</p>
-                  <p class="itemprice">$ 80.00</p>
-               
-
-                  <a href="product_item.php?id=1">
-                      <button class="button button5">Buy Now</button>
-                  </a>
-
-
-               </div>
-
-               </div>
-
-               <div class="col-xs-12 col-md-4">
-               
-               <div class="card hard">
-                  
-                  <img src="img/teddy.jpg" width="100%">
-                 
-                  <p class="itemtitle">Carebear 12" Plush</p>
-                  <p class="itemprice">$ 24.99</p>
-                  
-                  <button class="button button5">Buy Now</button>
-
-               </div>
-
-               </div>
-
-               <div class="col-xs-12 col-md-4">
-               <div class="card hard"> 
-                  <img src="img/converse.jpg" width="100%">
-                  <p class="itemtitle">Converse Chuck Taylor High</p>
-                  <p class="itemprice">$ 55.00</p>
-
-
-                  <button class="button button5">Buy Now</button>
-
-               </div>
-               </div>
-            </div>
 
               
          </div>
