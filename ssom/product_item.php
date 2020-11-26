@@ -18,11 +18,15 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
    <?php include "parts/meta.php" ?>
 </head>
+
+
+
+
 <body>
    
    <?php include "parts/navbar.php" ?>
 
-
+   <div class="margin-box "> </div>
    <div class="container">
       <div class="grid gap">
          <div class="col-xs-12 col-md-7">

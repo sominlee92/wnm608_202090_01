@@ -268,7 +268,7 @@ code {
     background-color: transparent;
     font: inherit;
     padding: 0.5em 1em;
-    border-bottom: 1px solid var(--color-neutral-medium);
+   background-color: var(--color-alt-light);
     outline: 0;
 }
 .form-control {
@@ -316,7 +316,7 @@ code {
    width: 100%;
    /* line-height: 3rem; */
    font: inherit;
-   background-color: var(--color-neutral-light);
+   background-color: var(--color-alt-light);
    padding: 0.5em 1.5em;
    border-radius: 2em;
    border-width:0;
@@ -328,7 +328,7 @@ code {
    }
 
    .hotdog input {
-      background-color:transparent;
+       background-color: var(--color-alt-light);
       border-width:0;
       flex:1 1 100%;
       outline:0;

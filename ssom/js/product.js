@@ -6,3 +6,5 @@ $(()=>{
       $(".image-main img").attr("src",src);
    })
 })
+
+
