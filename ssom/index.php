@@ -47,7 +47,7 @@ include_once "parts/templates.php";
             <div class="article-body">
 
 
-             <h2> Welcome to Pinky Promise Club! </h2>
+             <h2> &#10084; Welcome to Pinky Promise Club &#10084; </h2>
 
 
                <p> Pinky Promise Club is the place that sells your favorite color Pink. We find out and bring everything pink in the world to you. Do what makes you pink.</p>
@@ -68,7 +68,7 @@ include_once "parts/templates.php";
            
            
          <div class="article-body">
-         <h1>Our Favorite</h1>
+         <h2> &#10083; Our Favorite</h2>
 
             <div class="grid gap">
  

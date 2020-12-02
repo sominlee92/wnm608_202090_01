@@ -100,7 +100,7 @@ $products = isset($result['error']) ? [] : $result;
                <?
                makeHiddenValues($_GET,[
                   "category"=>"all",
-                  "t"=>"products_by_category"
+                  "t"=>"products_all"
                ]);
                ?>
 

@@ -19,14 +19,13 @@ include_once "lib/php/functions.php";
 
       <?php include "parts/navbar.php" ?>
 
- 		<div class="view-window" style="background-image:url(img/logo_back.jpg)">
-		</div>
+
 
 		<div class="container">
 
-
+         <img src="img/logo_back.jpg" alt="Italian Trulli" width="100%" >
             <div class="article-body">
-            <h2> We are Pinky Promise Club !</h2>
+             <h2> &#10084; Welcome to Pinky Promise Club &#10084; </h2>
 
                <p>Life is too short to be happy with your favorites. Do what makes you happy. Buy what makes you happy.</p>
 
@@ -35,7 +34,8 @@ include_once "lib/php/functions.php";
 
             <div class="article-body">
 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum dolorum, alias fugit nemo, facilis nam. Maiores nostrum beatae velit tempora quos laudantium sit id, eos corporis aut alias hic libero. Veritatis veniam explicabo repellat tenetur, aut assumenda magnam consectetur facere minima ea fugiat. Magnam odio incidunt excepturi a voluptates.</p>
+            <h2> &#10084; Contact Us &#10084; </h2>
+
 
             </div>
 
