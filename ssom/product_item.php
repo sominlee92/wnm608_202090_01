@@ -109,7 +109,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                MYSQLIQuery("
                   SELECT *
                   FROM product
-                  WHERE id in (4,6,8)
+                  WHERE id in (5,14,10)
                "),
                'makeProductList'
             );
