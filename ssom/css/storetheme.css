@@ -151,6 +151,14 @@ b
 .card.flat {
   padding: 1em;
 }
+span.badge:not(:empty)::after {
+  content:')';
+}
+span.badge:not(:empty)::before {
+  content:'(';
+}
+
+
 
 
 @media (max-width:600px) {

@@ -752,7 +752,7 @@ padding: 0.2em;
     border-radius: 0.3em;
     padding: 0.5em 1em;
     background-color: var(--color-alt-medium);
-        text-align: center;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
     outline: 0;
@@ -794,6 +794,30 @@ padding: 0.2em;
       outline:0;
       font:inherit;
    }
+
+
+.hotdog.stack>:first-child {
+    border-radius: 2em 0 0 2em;
+}
+
+.hotdog.stack button {
+ background-color: var(--color-alt-medium);
+ padding: 0.5em 1.5em;
+flex: none;
+}
+
+.hotdog.stack input {
+  padding: 0.5em 1.5em;
+    }
+
+.hotdog.stack button, .hotdog.stack input, .hotdog input {
+  
+    background-color: transparent;
+    border-width: 0;
+    flex: 1 1 100%;
+    outline: 0;
+    font: inherit;
+}
 
 
 

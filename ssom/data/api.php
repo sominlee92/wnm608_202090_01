@@ -16,8 +16,8 @@ function makeStatement($type) {
       case "products_all":
          return MYSQLIQuery("SELECT *
             FROM `product`
-            ORDER BY `date_create`
-            LIMIT 12");
+            ORDER BY {$_GET['orderby']} {$_GET['orderby_direction']}
+            LIMIT {$_GET['limit']}");
          break;
 
 
@@ -38,7 +38,9 @@ function makeStatement($type) {
          return MYSQLIQuery("SELECT *
             FROM `product`
             WHERE `category` = '{$_GET['category']}'
-            LIMIT 12
+            
+            ORDER BY {$_GET['orderby']} {$_GET['orderby_direction']}
+            LIMIT {$_GET['limit']}
             ");
          break;
 
@@ -50,8 +52,8 @@ function makeStatement($type) {
          return MYSQLIQuery("SELECT *
             FROM `product`
             WHERE `price` > '{$_GET['price']}'
-            ORDER BY price DESC
-            LIMIT 12
+            ORDER BY `price` DESC
+            LIMIT {$_GET['limit']}
             ");
          break;
 
@@ -62,10 +64,13 @@ function makeStatement($type) {
          return MYSQLIQuery("SELECT *
             FROM `product`
             WHERE `price` < '{$_GET['price']}'
-            ORDER BY price DESC
-            LIMIT 12
+            ORDER BY `price` ASC
+            LIMIT {$_GET['limit']}
             ");
          break;
+
+
+
 
 
 
@@ -76,11 +81,10 @@ function makeStatement($type) {
          return MYSQLIQuery("SELECT *
             FROM `product`
             WHERE `name` LIKE '%{$_GET['s']}%'
-            ORDER BY date_create DESC
-            LIMIT 12
+            ORDER BY {$_GET['orderby']} {$_GET['orderby_direction']}
+            LIMIT {$_GET['limit']}
             ");
          break;
-
 
 
 
@@ -90,10 +94,10 @@ function makeStatement($type) {
 }
 
 
-if(isset($_GET['t'])) {
-   echo json_encode(
-      makeStatement($_GET['t']),
-      JSON_UNESCAPED_UNICODE |
-      JSON_NUMERIC_CHECK
-   );
-}
+// if(isset($_GET['t'])) {
+//    echo json_encode(
+//       makeStatement($_GET['t']),
+//       JSON_UNESCAPED_UNICODE |
+//       JSON_NUMERIC_CHECK
+//    );
+// }
