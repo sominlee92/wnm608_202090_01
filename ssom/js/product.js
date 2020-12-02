@@ -8,3 +8,7 @@ $(()=>{
 })
 
 
+const checkSort = el => {
+	console.log(el)
+	
+}
