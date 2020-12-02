@@ -19,6 +19,12 @@ function makeStatement($type) {
             ORDER BY {$_GET['orderby']} {$_GET['orderby_direction']}
             LIMIT {$_GET['limit']}");
          break;
+      
+      case "products_admin_all":
+         return MYSQLIQuery("SELECT *
+            FROM `product`
+            ORDER BY date_create DESC");
+         break;
 
 
       case "product_by_id":

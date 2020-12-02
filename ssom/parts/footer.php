@@ -3,6 +3,7 @@
 <div class="footer-con">
    <footer class="footer">
      
+<hr>
 
       
 <div class="footer-grid">
@@ -51,6 +52,12 @@
 
 </div>
 
+<hr>
+<div class="footer-inside">
+
+<h4>Product Admin</h4>
+
+</div>
 <hr>
 
 <div class="footer-inside">

@@ -24,7 +24,7 @@ $cart = getCartItems();
 
 
   
-   <div class="margin-box "> </div>
+   <div class="margin-box"> </div>
 
    <div class="container">
       <div class="grid gap">

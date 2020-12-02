@@ -75,6 +75,7 @@ $products = isset($result['error']) ? [] : $result;
 
 
    <div class="container">
+   <div class="margin-box"> </div>
 
       <form action="product_list.php" method="get" class="hotdog stack">
 
@@ -181,7 +182,11 @@ $products = isset($result['error']) ? [] : $result;
        </div>
    </div>
 
-
+<div class="container">
+   <div class="soft">
+      
+   </div>
+</div>
       <?php include "parts/footer.php" ?>
 
 

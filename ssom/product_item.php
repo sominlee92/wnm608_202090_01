@@ -47,6 +47,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                   <h2><?= $product->name ?></h2>
                   <div>&dollar;<?= $product->price ?></div>
                </div>
+              
                <div class="card-section">
                   <div class="form-control">
                      
