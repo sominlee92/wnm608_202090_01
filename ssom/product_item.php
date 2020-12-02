@@ -67,26 +67,34 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                         </select>
                      </div>
                   </div>
+
                   <div class="form-control">
                      
                      <label for="product-color" class="form-label">Color</label>
+
                      <div class="form-select">
+
                         <select name="product-color" id="product-color">
-                           <option value="red">Red</option>
-                           <option value="green">Green</option>
-                           <option value="blue">Blue</option>
+
+                           <option value="red"><?= $product->option_1 ?></option>
+                           <option value="green"><?= $product->option_2 ?></option>
+                           <option value="blue"><?= $product->option_3 ?></option>
+
                         </select>
                      </div>
                   </div>
 
                   <div class="form-control">
+
                      <input type="submit" class="form-button" value="Add To Cart">
+
                   </div>
 
                </div>
             </form>
          </div>
       </div>
+      
       <div class="card soft medium">
          <p><?= $product->description ?></p>
       </div>

@@ -99,6 +99,17 @@ $products = isset($result['error']) ? [] : $result;
             <form action="product_list.php" method="get">
                <?
                makeHiddenValues($_GET,[
+                  "category"=>"all",
+                  "t"=>"products_by_category"
+               ]);
+               ?>
+
+               <input type="submit" value="all" class="form-button">
+            </form>
+
+            <form action="product_list.php" method="get">
+               <?
+               makeHiddenValues($_GET,[
                   "category"=>"cosmetics",
                   "t"=>"products_by_category"
                ]);

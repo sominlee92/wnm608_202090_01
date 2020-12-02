@@ -18,8 +18,11 @@ include_once "lib/php/functions.php";
 
    <?php include "parts/navbar.php" ?>
 
-	   
+	  <div class="margin-box "> </div>
+
 	 <div class="container">
+      <div class="margin-box "> </div>
+
      	<div class="card soft">
          <h2>Product Checkout</h2>
 

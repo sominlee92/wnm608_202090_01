@@ -11,8 +11,11 @@ include_once "lib/php/functions.php";
 </head>
 <body>
 
+   <div class="margin-box "> </div>
 
    <div class="container">
+   	   <div class="margin-box "> </div>
+
       <div class="card soft">
          <h2>Thanks for Purchasing</h2>
 

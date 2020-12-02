@@ -50,7 +50,7 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `price`, `date_create`, `date_modify`, `category`, `image_main`, `image_other`, `image_thumb`, `description`, `quantity`, `option_1`, `option_2`, `option_3`) VALUES
-(26, 'Little Twin Star  Memo Pad Set', 15.99, '2020-12-02 10:54:14', '2020-12-02 10:54:14', 'Stationary', 'stationary_memo2.jpg', 'stationary_memo2_1.jpg,stationary_memo2_2.jpg,stationary_memo2_3.jpg', 'stationary_memo_m.jpg', 'Sanrio’s Little Twin Star Memo pad Set', 30, '-', '-', '-'),
+(26, 'Little Twin Star  Memo Pad Set', 15.99, '2020-12-02 10:54:14', '2020-12-02 10:54:14', 'Stationary', 'stationary_memo2.jpg', 'stationary_memo2_1.jpg,stationary_memo2_2.jpg,stationary_memo2_3.jpg', 'stationary_memo2_m.jpg', 'Sanrio’s Little Twin Star Memo pad Set', 30, '-', '-', '-'),
 (25, 'Marie Tsum Tsum Plush', 13.99, '2020-11-08 23:23:30', '2020-11-08 23:23:30', 'Toy', 'toy_marie.jpg', 'toy_marie_1.jpg,toy_marie_2.jpg,toy_marie_3.jpg', 'toy_marie_m.jpg', 'Disney\'s Tsum Tsum Plush : Marie ', 35, '-', '-', '-'),
 (5, 'Heart Blush', 9.99, '2020-11-08 23:00:22', '2020-11-08 23:00:22', 'Cosmetics', 'cosmetics_blush.jpg', 'cosmetics_blush_1.jpg,cosmetics_blush_2.jpg,cosmetics_blush_3.jpg', 'cosmetics_blush_m.jpg', 'Half Caked’s heart blush. 100% Vegan and Cruelty free cosmetics.', 35, 'Pink Lemonade', 'Doll House', 'Million of Peacheds'),
 (6, 'Dasique Shadow Palette', 30.99, '2020-11-08 23:00:22', '2020-11-08 23:00:22', 'Cosmetics', 'cosmetics_eyeshadow.jpg', 'cosmetics_eyeshadow_1.jpg,cosmetics_eyeshadow_2.jpg,cosmetics_eyeshadow_3.jpg', 'cosmetics_eyeshadow_m.jpg', 'Dasique’s nine hole eye palette', 40, '-', '-', '-'),
