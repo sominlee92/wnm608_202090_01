@@ -24,7 +24,7 @@ $cart_product = cartItemById($_GET['id']);
    <?php include "parts/navbar.php" ?>
 
     <div class="container">
-   <div class="margin-box"> </div>
+    <div class="margin-box"> </div>
 
       <div class="card soft">
 

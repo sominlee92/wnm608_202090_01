@@ -184,9 +184,12 @@ $products = isset($result['error']) ? [] : $result;
 
 <div class="container">
    <div class="soft">
-      
+   <div class="margin-box "> </div>
+
    </div>
+
 </div>
+
       <?php include "parts/footer.php" ?>
 
 
