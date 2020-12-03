@@ -70,7 +70,7 @@ function cartItemById($id) {
    return array_find(getCart(),function($o)use($id){ return $o->id==$id; });
 }
 
-function addToCart($id,$amount) {
+function addToCart($post) {
    //resetCart();
    $cart = getCart();
 
@@ -80,7 +80,8 @@ function addToCart($id,$amount) {
    else {
       $cart[] = (object)[
          "id"=>$id,
-         "amount"=>$amount
+         "amount"=>$post['product-amount'],
+         "option"=>$post['product-option']
       ];
    }
 

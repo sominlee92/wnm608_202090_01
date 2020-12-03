@@ -71,15 +71,15 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
                   <div class="form-control">
                      
-                     <label for="product-color" class="form-label">Color</label>
+                     <label for="product-option" class="form-label">Option</label>
 
                      <div class="form-select">
 
-                        <select name="product-color" id="product-color">
+                        <select name="product-option" id="product-option">
 
-                           <option value="red"><?= $product->option_1 ?></option>
-                           <option value="green"><?= $product->option_2 ?></option>
-                           <option value="blue"><?= $product->option_3 ?></option>
+                           <option value="option_1"><?= $product->option_1 ?></option>
+                           <option value="option_2"><?= $product->option_2 ?></option>
+                           <option value="option_3"><?= $product->option_3 ?></option>
 
                         </select>
                      </div>

@@ -4,7 +4,7 @@ include_once "lib/php/functions.php";
 
 switch($_GET['action']) {
    case "add-to-cart":
-      addToCart($_POST['product-id'],$_POST['product-amount']);
+      addToCart($_POST['product-id'],$_POST['product-amount'],$_POST['product-option']);
       header("location:product_added_to_cart.php?id={$_POST['product-id']}");
       break;
 

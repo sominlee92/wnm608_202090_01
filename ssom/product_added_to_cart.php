@@ -1,9 +1,13 @@
 <?php
 
+
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 $product = MYSQLIQuery("SELECT * FROM `product` WHERE `id` = ".$_GET['id'])[0];
 
 $cart_product = cartItemById($_GET['id']);
+
+
 
 ?><!DOCTYPE html>
 
@@ -20,6 +24,8 @@ $cart_product = cartItemById($_GET['id']);
    <?php include "parts/navbar.php" ?>
 
     <div class="container">
+   <div class="margin-box"> </div>
+
       <div class="card soft">
 
          <h2>Added <?= $product->name ?> To Cart</h2>
