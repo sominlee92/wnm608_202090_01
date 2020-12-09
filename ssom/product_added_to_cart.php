@@ -2,7 +2,6 @@
 
 
 include_once "lib/php/functions.php";
-include_once "parts/templates.php";
 $product = MYSQLIQuery("SELECT * FROM `product` WHERE `id` = ".$_GET['id'])[0];
 
 $cart_product = cartItemById($_GET['id']);
@@ -32,7 +31,7 @@ $cart_product = cartItemById($_GET['id']);
 
          <p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart.</p>
 
-         <div class="display-flex">\
+         <div class="display-flex">
                       <div class="flex-none">
                <a href="product_list.php" class="form-button">Back to shopping</a>
             </div>

@@ -18,7 +18,6 @@
     
            <div class="nav-right">
                <li><a href="product_cart.php"> <img src="img/cart1.svg" width="30px"> </a></li>
-               <li><a href="product_search.php"> <img src="img/search1.svg" width="30px"> </a></li>
             </div>
 
          </ul>

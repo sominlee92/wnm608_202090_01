@@ -27,7 +27,7 @@ function makeSortOptions() {
       echo "
       <option data-orderby='$orderby' data-direction='$direction'
       ".($_GET['orderby']==$orderby && $_GET['orderby_direction']==$direction ? "selected" : "").">
-      $title
+      $name
       </option>
       ";
    }
@@ -144,6 +144,8 @@ $products = isset($result['error']) ? [] : $result;
          </div>
          
          <div class="flex-stretch"></div>
+         
+
          <div class="flex-none">
             
             <form action="product_list.php" method="get">
@@ -156,8 +158,12 @@ $products = isset($result['error']) ? [] : $result;
                      <?=makeSortOptions()?>
                   </select>
                </div>
+
             </form>
+
+
          </div>
+
       </div>
 
 
