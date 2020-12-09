@@ -95,9 +95,81 @@ function makeStatement($type) {
 
 
 
+
+      case "product_insert":
+         return MYSQLIQuery("INSERT INTO
+            `product`
+            (
+               `name`,
+               `price`,
+               `category`,
+               `description`,
+               `quantity`,
+               `image_main`,
+               `image_other`,
+               `image_thumb`,
+               `date_create`,
+               `date_modify`,
+               `option_1`,
+               `option_2`,
+               `option_3`,
+
+            )
+            VALUES
+            (
+               '{$params[0]}',
+               '{$params[1]}',
+               '{$params[2]}',
+               '{$params[3]}',
+               '{$params[4]}',
+               '{$params[5]}',
+               '{$params[6]}',               
+               '{$params[7]}',
+               '{$params[8]}',
+               '{$params[9]}',
+               '{$params[10]}',
+
+               NOW(),
+               NOW()
+            )
+            ");
+         break;
+
+      case "product_update":
+         return MYSQLIQuery("UPDATE
+            `product`
+            SET
+               `name` = '{$params[0]}',
+               `price` = '{$params[1]}',
+               `category` = '{$params[2]}',
+               `description` = '{$params[3]}',
+               `quantity` = '{$params[4]}',
+               `image_main`= '{$params[5]}',
+               `image_other` = '{$params[6]}',
+               `image_thumb` = '{$params[7]}',
+               `option_1` = '{$params[8]}',
+               `option_2` = '{$params[9]}',
+               `option_3` = '{$params[10]}',
+            WHERE `id` = {$params[11]}
+            ");
+         break;
+
+      case "product_delete":
+         return MYSQLIQuery("DELETE FROM
+            `product` WHERE `id` = {$params[0]}
+            ");
+         break;
+
+
+
+
+
+
+
       default: return ["error"=>"No Matched Type"];
    }
 }
+
 
 
 // if(isset($_GET['t'])) {
