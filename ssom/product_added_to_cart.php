@@ -32,8 +32,8 @@ $cart_product = cartItemById($_GET['id']);
 
          <p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart.</p>
 
-         <div class="display-flex">
-            <div class="flex-none">
+         <div class="display-flex">\
+                      <div class="flex-none">
                <a href="product_list.php" class="form-button">Back to shopping</a>
             </div>
             

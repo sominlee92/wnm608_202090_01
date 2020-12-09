@@ -98,7 +98,7 @@ $id = $_GET['id'];
 $thumbs = explode(",",$product->image_other);
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/images/store/$o'>";
+   return $r."<img src='/aau/wnm608_202090_01/ssom/img/store/$o'>";
 });
 
 
@@ -110,10 +110,10 @@ $createorupdate = $id=='new' ? 'create' : 'update';
 $productdata = $id=='new' ? '' : <<<HTML
 <div class="card soft">
    <div class="display-flex">
-      <h2 class="flex-stretch">$product->title</h2>
+      <h2 class="flex-stretch">$product->name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="img/icons/trash.svg" class="icon">
+            <img src="/aau/wnm608_202090_01/ssom/img/trash.svg" class="icon">
          </a>
       </div>
    </div>
@@ -135,7 +135,7 @@ $productdata = $id=='new' ? '' : <<<HTML
    </div>
    <div>
       <strong>Images</strong>
-      <div class="image-thumbs"><img src='/images/store/$product->image_thumb'></div>
+      <div class="image-thumbs"><img src='/aau/wnm608_202090_01/ssom/img/store/$product->image_thumb'></div>
       <div class="image-thumbs">$thumbs_elements</div>
    </div>
 </div>
@@ -153,12 +153,17 @@ echo <<<HTML
    <div class="col-xs-12 col-md-4">$productdata</div>
    <div class="col-xs-12 col-md-8">
       <div class="card soft">
+         
+
          <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
+
+
             <h2>$addoredit Product</h2>
             <div class="form-control">
                <label for="product-name" class="form-label">Name</label>
                <input id="product-name" name="product-title" type="text" placeholder="Type product name" class="form-input" value="$product->name">
             </div>
+
             <div class="form-control">
                <label for="product-category" class="form-label">Category</label>
                <input id="product-category" name="product-category" type="text" placeholder="Type product category" class="form-input" value="$product->category">
@@ -179,14 +184,17 @@ echo <<<HTML
                <label for="product-image_thumb" class="form-label">Image Thumb</label>
                <input id="product-image_thumb" name="product-image_thumb" type="text" placeholder="Type product image thumb" class="form-input" value="$product->image_thumb">
             </div>
+
             <div class="form-control">
-               <label for="product-image_other" class="form-label">Option 1</label>
-               <input id="product-option1" name="product-ioption1" type="text" placeholder="Type product option1" class="form-input" value="$product->option1">
+               <label for="product-option1" class="form-label">Option 1</label>
+               <input id="product-option1" name="product-option1" type="text" placeholder="Type product option1" class="form-input" value="$product->option1">
             </div>
+
               <div class="form-control">
-               <label for="product-image_other" class="form-label">Option 2</label>
+               <label for="pproduct-option2" class="form-label">Option 2</label>
                <input id="product-option2" name="product-option2" type="text" placeholder="Type product option 2" class="form-input" value="$product->option2">
             </div>
+
               <div class="form-control">
                <label for="product-option3" class="form-label">Option 3</label>
                <input id="product-option3" name="product-option3" type="text" placeholder="Type product option 3" class="form-input" value="$product->option3">
@@ -195,7 +203,10 @@ echo <<<HTML
             <div class="form-control">
                <input class="form-button" type="submit" value="Save">
             </div>
+
+
          </form>
+
       </div>
    </div>
 </div>

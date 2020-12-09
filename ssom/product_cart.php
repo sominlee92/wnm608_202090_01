@@ -26,11 +26,12 @@ $cart = getCartItems();
   
    <div class="margin-box"> </div>
 
+
+
    <div class="container">
       <div class="grid gap">
          <div class="col-xs-12 col-md-8">
             <div class="card soft">
-               
                <h2>Product Cart</h2>
                <?
 

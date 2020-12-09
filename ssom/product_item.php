@@ -27,7 +27,10 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
    <?php include "parts/navbar.php" ?>
 
    <div class="margin-box "> </div>
+
+
    <div class="container">
+
       <div class="grid gap">
          <div class="col-xs-12 col-md-7">
 
@@ -35,18 +38,23 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                <div class="image-main">
                   <img src="/aau/wnm608_202090_01/ssom/img/store/<?= $product->image_thumb ?>" alt="">
                </div>
-               
+
                <div class="image-thumbs">
                   <?= $thumbs_elements ?>
                </div>
             </div>
          </div>
+
          <div class="col-xs-12 col-md-5">
+
             <form class="card soft flat" method="post" action="product_actions.php?action=add-to-cart">
                <input type="hidden" name="product-id" value="<?= $product->id ?>">
+            
                <div class="card-section">
+
                   <h2><?= $product->name ?></h2>
                   <div>&dollar;<?= $product->price ?></div>
+
                </div>
               
                <div class="card-section">
