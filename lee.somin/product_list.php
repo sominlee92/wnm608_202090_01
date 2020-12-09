@@ -65,11 +65,10 @@ $products = isset($result['error']) ? [] : $result;
 
   <?php include "parts/navbar.php" ?>
 
-  <div class="view-window" style="background-image:url(img/background.png)">
+   <div class="margin-box"> </div>
         
-  <h2> Shop</h2>
 
- </div>
+ 
 
 
 
@@ -93,6 +92,9 @@ $products = isset($result['error']) ? [] : $result;
 
          <button type="submit">Search</button>
       </form>
+
+
+      
 
       <div class="display-flex" style="margin:1em 0">
          <div class="flex-none display-flex">
@@ -167,6 +169,7 @@ $products = isset($result['error']) ? [] : $result;
       </div>
 
 
+   <div class="margin-box"> </div>
 
         <div class="product-list">
 
