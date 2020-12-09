@@ -112,7 +112,16 @@ a:hover .product-item {
   overflow:hidden;
   padding-bottom:60%;
 }
-.image-main img,
+.image-main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 .product-image img {
     position: absolute;
     top: 0;
@@ -125,13 +134,11 @@ a:hover .product-item {
 
 
 
-b
 .image-thumbs img {
   width:120px;
   height:120px;
   object-fit:cover;
 }
-
 
 
 
