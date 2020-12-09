@@ -1,4 +1,4 @@
-
+t
 
 :root {
 
@@ -708,53 +708,70 @@ padding: 0.2em;
       background-color:var(--color-purchase);
    }
 
-.hotdog {
+.hotdog
+
+{
    display: inline-flex;
    width: 100%;
-   /* line-height: 3rem; */
+    /*line-height: 3rem; */
    font: inherit;
-   background-color: var(--color-alt-light);
+    background-color: var(--color-alt-medium);
    padding: 0.5em 1.5em;
    border-radius: 2em;
    border-width:0;
    outline:0;
 }
+
+
+}
    .hotdog.dark {
-      background-color: var(--color-neutral-dark);
-      color: var(--color-neutral-light);
+      background-color: var(--color-alt-dark);
+      color: var(--color-alt-light);
    }
 
+   .hotdog.stack button,
+   .hotdog.stack input,
    .hotdog input {
-      background-color:transparent;
       border-width:0;
       flex:1 1 100%;
       outline:0;
       font:inherit;
    }
 
+   .hotdog.stack {
+      padding:0;
+      display: inline-flex;
+   width: 100%;
+   font: inherit;
+   background-color: transparent;
+   padding: 0.5em 1.5em;
+   border-radius: 2em;
+   border-width:0;
+   outline:0;
+   }
 
-.hotdog.stack>:first-child {
-    border-radius: 2em 0 0 2em;
-}
 
-.hotdog.stack button {
- background-color: var(--color-alt-medium);
- padding: 0.5em 1.5em;
-flex: none;
-}
+   .hotdog.stack input {
+      padding:0.5em 1.5em;
+         background-color: var(--color-alt-light);
 
-.hotdog.stack input {
-  padding: 0.5em 1.5em;
-    }
+   }
 
-.hotdog.stack button, .hotdog.stack input, .hotdog input {
-  
-    background-color: transparent;
-    border-width: 0;
-    flex: 1 1 100%;
-    outline: 0;
-    font: inherit;
-}
+
+   .hotdog.stack button {
+      background-color:var(--color-alt-medium);
+      padding:0.5em 1.5em;
+      flex: none;
+   }
+   .hotdog.stack>:first-child {
+      border-radius: 2em 0 0 2em;
+   }
+   .hotdog.stack>:last-child {
+      border-radius: 0 2em 2em 0;
+   }
+
+
+
 
 
 
@@ -782,7 +799,6 @@ flex: none;
   font-weight: 700;
   font-style: normal;
    font-size:0.9em;
-   top:50%;
    transform:translateY(50%);
    right:0.3rem;
    pointer-events:none;
