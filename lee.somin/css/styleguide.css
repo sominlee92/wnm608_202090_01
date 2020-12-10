@@ -352,7 +352,7 @@ header.navbar {
 
   position: fixed;
   width: 100%;
-
+  top: 0;
    background-color:var(--color-main-medium);
    color:var(--color-alt-dark);
    z-index: 999;

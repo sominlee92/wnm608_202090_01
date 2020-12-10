@@ -1,5 +1,5 @@
 
-<base href="/aau/wnm608_202090_01/ssom/">
+<base href="/aau/wnm608_202090_01/lee.somin/">
 
 
 <meta charset="UTF-8">

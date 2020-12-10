@@ -78,7 +78,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                      </div>
                   </div>
 
-                  <div class="form-control">
+         <!--          <div class="form-control">
                      
                      <label for="product-option" class="form-label">Option</label>
 
@@ -92,7 +92,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
                         </select>
                      </div>
-                  </div>
+                  </div> -->
 
                   <div class="form-control">
 
