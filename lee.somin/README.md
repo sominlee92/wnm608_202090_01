@@ -18,5 +18,3 @@
 <h3>Grid system</h3>
 <p> http://somin-lee.com/aau/wnm608_202090_01/lee.somin/grid/grid.html</p>
 
-<h3>Pinky Promise Club - style guide</h3>
-<p> http://somin-lee.com/aau/wnm608_202090_01/lee.somin/styleguide.html</p>
