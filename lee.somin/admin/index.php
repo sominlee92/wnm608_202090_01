@@ -14,13 +14,14 @@ $products = makeStatement("products_admin_all",[]);
 
 
 $empty_product = (object)[
-   "name"=>"",
-   "price"=>"",
-   "category"=>"",
-   "description"=>"",
-   "quantity"=>"",
-   "image_other"=>"",
-   "image_thumb"=>""
+   "name"=>"Piglet Tsum Tsum Plush",
+   "price"=>"13.99",
+   "category"=>"Toy",
+   "description"=>"Disney's Tsum Tsum Plush : Piglet ",
+   "quantity"=>"35",
+   "image_main"=>"toy_piglet.jpg",
+   "image_other"=>"toy_piglet_1.jpg,toy_piglet_2.jpg,toy_piglet_3.jpg",
+   "image_thumb"=>"toy_piglet_m.jpg"
 
 ];
 
@@ -35,6 +36,7 @@ switch(@$_GET['crud']) {
          $_POST['product-category'],
          $_POST['product-description'],
          $_POST['product-quantity'],
+         $_POST['product-image_main'],
          $_POST['product-image_other'],
          $_POST['product-image_thumb'],
 
@@ -175,9 +177,22 @@ echo <<<HTML
                <label for="product-description" class="form-label">Description</label>
                <textarea id="product-description" name="product-description" placeholder="Type product description" class="form-input">$product->description</textarea>
             </div>
+
+
+            <div class="form-control">
+               <label for="product-image_main" class="form-label">Image Main</label>
+               <input id="product-image_main" name="product-image_main" type="text" placeholder="Type product image main" class="form-input" value="$product->image_main">
+            </div>
+
             <div class="form-control">
                <label for="product-image_thumb" class="form-label">Image Thumb</label>
                <input id="product-image_thumb" name="product-image_thumb" type="text" placeholder="Type product image thumb" class="form-input" value="$product->image_thumb">
+            </div>
+
+
+            <div class="form-control">
+               <label for="product-image_other" class="form-label">Image Others</label>
+               <input id="product-image_other" name="product-image_other" type="text" placeholder="Type product image image_other" class="form-input" value="$product->image_other">
             </div>
 
            

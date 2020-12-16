@@ -109,9 +109,7 @@ function makeStatement($type) {
                `image_other`,
                `image_thumb`,
                `date_create`,
-               `date_modify`,
-
-
+               `date_modify`
             )
             VALUES
             (
@@ -123,7 +121,7 @@ function makeStatement($type) {
                '{$params[5]}',
                '{$params[6]}',               
                '{$params[7]}',
-          
+               '{$params[8]}',
 
                NOW(),
                NOW()
@@ -140,11 +138,11 @@ function makeStatement($type) {
                `category` = '{$params[2]}',
                `description` = '{$params[3]}',
                `quantity` = '{$params[4]}',
-               `image_main`= '{$params[5]}',
+               `image_main` = '{$params[5]}',
                `image_other` = '{$params[6]}',
-               `image_thumb` = '{$params[7]}',
+               `image_thumb` = '{$params[7]}'
 
-            WHERE `id` = {$params[8]}
+            WHERE `id` = {$params[9]}
             ");
          break;
 
@@ -153,8 +151,6 @@ function makeStatement($type) {
             `product` WHERE `id` = {$params[0]}
             ");
          break;
-
-
 
 
 
