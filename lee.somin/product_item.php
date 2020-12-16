@@ -34,7 +34,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       <div class="grid gap">
          <div class="col-xs-12 col-md-7">
 
-            <div class="card soft">
+            <div class="card hard">
                <div class="image-main">
                   <img src="/aau/wnm608_202090_01/lee.somin/img/store/<?= $product->image_main ?>" alt="">
                </div>
@@ -47,7 +47,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
          <div class="col-xs-12 col-md-5">
 
-            <form class="card soft flat" method="post" action="product_actions.php?action=add-to-cart">
+            <form class="card hard flat" method="post" action="product_actions.php?action=add-to-cart">
                <input type="hidden" name="product-id" value="<?= $product->id ?>">
             
                <div class="card-section">
@@ -127,6 +127,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
             ?>
          </div>
    </div>
+   <?php include "parts/footer.php" ?>
 
 </body>
 </html>

@@ -32,7 +32,10 @@ include_once "parts/templates.php";
 
    <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem50 -->
 
+  
+
  <div class="view-window" style="background-image:url(img/image01.jpg)"></div>
+
 
 
    <div class="container">
@@ -44,30 +47,26 @@ include_once "parts/templates.php";
          <article id="article1" class="article flex-stretch">
 
 
-            <div class="article-body">
 
+               <div class="article-body">
+                  <h2> &#10084; Welcome to Pinky Promise Club &#10084; </h2>
 
-             <h2> &#10084; Welcome to Pinky Promise Club &#10084; </h2>
+               </div>
 
-
-               <p> Pinky Promise Club is the place that sells your favorite color Pink. We find out and bring everything pink in the world to you. Do what makes you pink.</p>
-
-            </div>
 
          </article>
 
    </div>
 
-
-
-
+   <div class="margin-box"> </div>
 
    <div class="container">
 
 
            
            
-         <div class="article-body">
+         <div class="card light">
+
          <h2> &#10083; Our Favorite</h2>
 
             <div class="grid gap">
@@ -79,7 +78,7 @@ include_once "parts/templates.php";
                   SELECT *
                   FROM product
                   ORDER BY date_create DESC
-                  LIMIT 3
+                  LIMIT 6
                "),
                'makeProductList'
             );

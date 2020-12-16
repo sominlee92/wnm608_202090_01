@@ -79,6 +79,8 @@ body {
 
 }
 
+
+
 h1{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
@@ -179,7 +181,7 @@ code {
 .article-body {
 
 margin-top: 4em;
-margin-bottom: 8em;
+margin-bottom: 2em;
 
 
 }
@@ -192,9 +194,8 @@ margin-bottom: 8em;
 }
 
 .article-body>h2{
-padding-top: 1em;
-padding-bottom: 1em;
 font-size: 2em;
+text-align: center;
 
 }
 
@@ -519,11 +520,11 @@ color: var(--color-alt-dark);
 
       border-radius:0.5em;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 2em;
    }
    .card.hard {
        background-color:var(--color-main-light);
 
-      border-radius:0.2em;
       border:2px solid var(--color-alt-dark);
    }
 
@@ -554,6 +555,10 @@ color: var(--color-alt-dark);
 
    .card.flat {
       padding:0;
+   }
+
+   .card-section {
+    padding: 2em;
    }
 
 
