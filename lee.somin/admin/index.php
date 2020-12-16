@@ -93,7 +93,7 @@ $id = $_GET['id'];
 $thumbs = explode(",",$product->image_other);
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/aau/wnm608_202090_01/ssom/img/store/$o'>";
+   return $r."<img src='/aau/wnm608_202090_01/lee.somin/img/store/$o'>";
 });
 
 
@@ -108,7 +108,7 @@ $productdata = $id=='new' ? '' : <<<HTML
       <h2 class="flex-stretch">$product->name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="/aau/wnm608_202090_01/ssom/img/trash.svg" class="icon">
+            <img src="/aau/wnm608_202090_01/lee.somin/img/trash.svg" class="icon">
          </a>
       </div>
    </div>
