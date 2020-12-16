@@ -8,7 +8,7 @@ return $r.<<<HTML
    <a href="product_item.php?id=$o->id" class="product-item">
       <figure>
          <div class="product-image">
-            <img src="/aau/wnm608_202090_01/ssom/img/store/$o->image_thumb" alt="">
+            <img src="/aau/wnm608_202090_01/lee.somin/img/store/$o->image_thumb" alt="">
          </div>
          <figcaption class="product-description">
             <div class="product-price">&dollar;$o->price</div>

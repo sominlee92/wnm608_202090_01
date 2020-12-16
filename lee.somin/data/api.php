@@ -110,9 +110,7 @@ function makeStatement($type) {
                `image_thumb`,
                `date_create`,
                `date_modify`,
-               `option_1`,
-               `option_2`,
-               `option_3`,
+
 
             )
             VALUES
@@ -125,9 +123,7 @@ function makeStatement($type) {
                '{$params[5]}',
                '{$params[6]}',               
                '{$params[7]}',
-               '{$params[8]}',
-               '{$params[9]}',
-               '{$params[10]}',
+          
 
                NOW(),
                NOW()
@@ -147,10 +143,8 @@ function makeStatement($type) {
                `image_main`= '{$params[5]}',
                `image_other` = '{$params[6]}',
                `image_thumb` = '{$params[7]}',
-               `option_1` = '{$params[8]}',
-               `option_2` = '{$params[9]}',
-               `option_3` = '{$params[10]}',
-            WHERE `id` = {$params[11]}
+
+            WHERE `id` = {$params[8]}
             ");
          break;
 

@@ -20,10 +20,7 @@ $empty_product = (object)[
    "description"=>"",
    "quantity"=>"",
    "image_other"=>"",
-   "image_thumb"=>"",
-   "option1"=>"",
-   "option2"=>"",
-   "option3"=>""
+   "image_thumb"=>""
 
 ];
 
@@ -40,9 +37,7 @@ switch(@$_GET['crud']) {
          $_POST['product-quantity'],
          $_POST['product-image_other'],
          $_POST['product-image_thumb'],
-         $_POST['product-option1'],
-         $_POST['product-option2'],
-         $_POST['product-option3'],
+
 
          $_GET['id']
       ]);
@@ -135,7 +130,7 @@ $productdata = $id=='new' ? '' : <<<HTML
    </div>
    <div>
       <strong>Images</strong>
-      <div class="image-thumbs"><img src='/aau/wnm608_202090_01/ssom/img/store/$product->image_thumb'></div>
+      <div class="image-thumbs"><img src='/aau/wnm608_202090_01/lee.somin/img/store/$product->image_thumb'></div>
       <div class="image-thumbs">$thumbs_elements</div>
    </div>
 </div>
@@ -185,20 +180,7 @@ echo <<<HTML
                <input id="product-image_thumb" name="product-image_thumb" type="text" placeholder="Type product image thumb" class="form-input" value="$product->image_thumb">
             </div>
 
-            <div class="form-control">
-               <label for="product-option1" class="form-label">Option 1</label>
-               <input id="product-option1" name="product-option1" type="text" placeholder="Type product option1" class="form-input" value="$product->option1">
-            </div>
-
-              <div class="form-control">
-               <label for="pproduct-option2" class="form-label">Option 2</label>
-               <input id="product-option2" name="product-option2" type="text" placeholder="Type product option 2" class="form-input" value="$product->option2">
-            </div>
-
-              <div class="form-control">
-               <label for="product-option3" class="form-label">Option 3</label>
-               <input id="product-option3" name="product-option3" type="text" placeholder="Type product option 3" class="form-input" value="$product->option3">
-            </div>
+           
             
             <div class="form-control">
                <input class="form-button" type="submit" value="Save">

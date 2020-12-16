@@ -8,7 +8,7 @@ $product = MYSQLIQuery("SELECT * FROM product WHERE id = {$_GET['id']}")[0];
 $thumbs = explode(",",$product->image_other);
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/aau/wnm608_202090_01/ssom/img/store/$o'>";
+   return $r."<img src='/aau/wnm608_202090_01/lee.somin/img/store/$o'>";
 });
 
 ?><!DOCTYPE html>
@@ -36,7 +36,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
             <div class="card soft">
                <div class="image-main">
-                  <img src="/aau/wnm608_202090_01/ssom/img/store/<?= $product->image_thumb ?>" alt="">
+                  <img src="/aau/wnm608_202090_01/lee.somin/img/store/<?= $product->image_main ?>" alt="">
                </div>
 
                <div class="image-thumbs">
