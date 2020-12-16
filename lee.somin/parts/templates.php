@@ -121,7 +121,7 @@ HTML;
 function makeRecommend($a) {
 $products = array_reduce($a,'makeProductList');
 echo <<<HTML
-<div class="grid gap productlist">$products</div>
+<div class="card hard"><div class="grid gap productlist">$products</div></div>
 HTML;
 }
 

@@ -96,6 +96,7 @@ function makeStatement($type) {
 
 
 
+
       case "product_insert":
          return MYSQLIQuery("INSERT INTO
             `product`
@@ -105,7 +106,6 @@ function makeStatement($type) {
                `category`,
                `description`,
                `quantity`,
-               `image_main`,
                `image_other`,
                `image_thumb`,
                `date_create`,
@@ -119,10 +119,7 @@ function makeStatement($type) {
                '{$params[3]}',
                '{$params[4]}',
                '{$params[5]}',
-               '{$params[6]}',               
-               '{$params[7]}',
-               '{$params[8]}',
-
+               '{$params[6]}',
                NOW(),
                NOW()
             )
@@ -138,19 +135,22 @@ function makeStatement($type) {
                `category` = '{$params[2]}',
                `description` = '{$params[3]}',
                `quantity` = '{$params[4]}',
-               `image_main` = '{$params[5]}',
-               `image_other` = '{$params[6]}',
-               `image_thumb` = '{$params[7]}'
-
-            WHERE `id` = {$params[9]}
+               `image_other` = '{$params[5]}',
+               `image_thumb` = '{$params[6]}'
+            WHERE `id` = {$params[7]}
             ");
          break;
 
       case "product_delete":
          return MYSQLIQuery("DELETE FROM
-            `product` WHERE `id` = {$params[0]}
+            `product` WHERE `id` = '{$params[0]}'
             ");
          break;
+
+
+
+
+
 
 
 

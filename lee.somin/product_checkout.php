@@ -74,7 +74,7 @@ include_once "lib/php/functions.php";
 
          <div class="pay">
             <button class="button button3"><a href="product_actions.php?action=reset-cart">Pay</a></button>
-               <button class="button button2"> <a href="./">Cancel</a></button>
+            <button class="button button2"> <a href="./">Cancel</a></button>
             
 
          </div>

@@ -69,23 +69,9 @@ include_once "parts/templates.php";
 
          <h2> &#10083; Our Favorite</h2>
 
-            <div class="grid gap">
- 
-            <?php
+            <?php recommendCategory('toy'); ?>
+            <?php recommendCategory('cosmetics'); ?>
 
-            echo array_reduce(
-               MYSQLIQuery("
-                  SELECT *
-                  FROM product
-                  ORDER BY date_create DESC
-                  LIMIT 6
-               "),
-               'makeProductList'
-            );
-
-            ?>
-          </div>
-              
          </div>
    </div>
 

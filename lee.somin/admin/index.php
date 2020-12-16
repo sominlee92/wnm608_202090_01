@@ -17,10 +17,9 @@ $empty_product = (object)[
    "name"=>"Piglet Tsum Tsum Plush",
    "price"=>"13.99",
    "category"=>"Toy",
-   "description"=>"Disney's Tsum Tsum Plush : Piglet ",
+   "description"=>"Disney Tsum Tsum Plush : Piglet ",
    "quantity"=>"35",
-   "image_main"=>"toy_piglet.jpg",
-   "image_other"=>"toy_piglet_1.jpg,toy_piglet_2.jpg,toy_piglet_3.jpg",
+   "image_other"=>"toy_piglet_1.jpg, toy_piglet_2.jpg, toy_piglet_3.jpg",
    "image_thumb"=>"toy_piglet_m.jpg"
 
 ];
@@ -36,7 +35,6 @@ switch(@$_GET['crud']) {
          $_POST['product-category'],
          $_POST['product-description'],
          $_POST['product-quantity'],
-         $_POST['product-image_main'],
          $_POST['product-image_other'],
          $_POST['product-image_thumb'],
 
@@ -56,29 +54,25 @@ switch(@$_GET['crud']) {
       header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
       break;
 
+ case 'create':
 
-   case 'create':
-      $empty_product->name = $_POST['product-name'];
-      $empty_product->type = $_POST['product-type'];
-      $empty_product->email = $_POST['product-email'];
-      $empty_product->classes = explode(", ",$_POST['product-classes']);
-
-
-      $id = count($products);
-
-      $products[] = $empty_product;
-
-      file_put_contents($filename,json_encode($products));
-
+      $id = makeStatement("product_insert",[
+         $_POST['product-name'],
+         $_POST['product-price'],
+         $_POST['product-category'],
+         $_POST['product-description'],
+         $_POST['product-quantity'],
+         $_POST['product-image_other'],
+         $_POST['product-image_thumb']
+      ]);
       header("location:{$_SERVER['PHP_SELF']}?id=$id");
       break;
 
 
    case 'delete':
-      array_splice($products,$_GET['id'],1);
-
-      file_put_contents($filename,json_encode($products));
-
+      makeStatement("product_delete",[
+         $_GET['id']
+      ]);
       header("location:{$_SERVER['PHP_SELF']}");
       break;
 }
@@ -139,10 +133,11 @@ $productdata = $id=='new' ? '' : <<<HTML
 HTML;
 
 echo <<<HTML
-<div class="card medium soft">
+<div class="card medium">
+
 <nav class="nav crumbs">
    <ul>
-      <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
+      <li><a href="{$_SERVER['PHP_SELF']}"> &#8672; Back</a></li>
    </ul>
 </nav>
 </div>
@@ -179,10 +174,7 @@ echo <<<HTML
             </div>
 
 
-            <div class="form-control">
-               <label for="product-image_main" class="form-label">Image Main</label>
-               <input id="product-image_main" name="product-image_main" type="text" placeholder="Type product image main" class="form-input" value="$product->image_main">
-            </div>
+    
 
             <div class="form-control">
                <label for="product-image_thumb" class="form-label">Image Thumb</label>

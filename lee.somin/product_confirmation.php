@@ -27,7 +27,7 @@ include_once "lib/php/functions.php";
 
             <h2>Thanks for Purchasing</h2>
 
-            <a href="product_list.php">&#8672; Back to shopping</a>
+            <a href="product_list.php"> &#8672; Back to shopping</a>
          </div>
 
       </div>
