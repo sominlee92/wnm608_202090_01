@@ -44,6 +44,10 @@
            		<p>Monday-Friday 9am-5pm PST</p>
            		<hr>
             	<h3>Follow Us</h3>
+              <a href="https://twitter.com"><img src="img/twitter.png" width="50px"></a>
+              <a href="https://facebook.com"><img src="img/facebook.png" width="50px"></a>
+              <a href="https://instagram.com"><img src="img/instagram.png" width="50px"></a>
+
 
          	</div>
          </div>
