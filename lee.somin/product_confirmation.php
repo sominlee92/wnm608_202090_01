@@ -23,7 +23,7 @@ include_once "lib/php/functions.php";
         
          <div class="pay">
 
-            <img src="img/logo_back.jpg">
+            <img src="img/image02.jpg">
 
             <h2>Thanks for Purchasing</h2>
 

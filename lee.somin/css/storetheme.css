@@ -60,6 +60,7 @@ body {
 
 
 
+.footer a
 
 
 
@@ -159,6 +160,8 @@ a:hover .product-item {
 .card.flat {
   padding: 1em;
 }
+
+
 span.badge:not(:empty)::after {
   content:')';
 }

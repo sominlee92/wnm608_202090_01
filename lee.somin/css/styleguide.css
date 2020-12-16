@@ -345,7 +345,14 @@ hr {
 /* Component Classes */
 
 
+img.logo {
+      position: relative;
 
+  margin-left: auto;
+  margin-right: auto;
+    overflow: hidden;
+
+}
 
 header.navbar {
 
@@ -406,31 +413,7 @@ header.navbar {
   float: left;
 }
 
-.nav li a, .dropbtn {
-  display: inline-block;
-  color: var(--color-main-light);
-  text-align: center;
-  padding:0.2em 0.5em;
-  text-decoration: none;
-}
-.nav li a:hover, .dropdown:hover .dropbtn {
-background-color:var(--color-main-dark);
 
-}
-
-.nav li.dropdown {
-  display: inline-block;
-}
-
-
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  font-size:1em;  
-
-
-}
 
    .nav.crumbs ul,
    .nav.pills ul,
@@ -691,7 +674,7 @@ padding: 0.2em;
     width: 100%;
     border-width: 0;
     font: inherit;
-    border-radius: 0.3em;
+    border-radius: 1em;
     padding: 0.5em 1em;
     background-color: var(--color-alt-medium);
     text-align: center;
@@ -703,6 +686,12 @@ padding: 0.2em;
 .btn:hover,
 .form-button:hover {
    text-decoration:none;
+  background-color: var(--color-alt-dark);
+  color: var(--color-alt-light);
+
+}
+
+
 }
 
    .btn.inline {
@@ -712,6 +701,7 @@ padding: 0.2em;
    .btn.sell {
       background-color:var(--color-purchase);
    }
+
 
 .hotdog
 
@@ -815,10 +805,10 @@ padding: 0.2em;
     width: 100%;
     border-width: 0;
     font: inherit;
-    border-radius: 0.3em;
+    border-radius: 1.5em;
     padding: 0.5em 1em;
     margin-right: 1em;
-    background-color: var(--color-main-medium);
+    background-color: var(--color-alt-medium);
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -837,14 +827,24 @@ padding: 0.2em;
 
 
 .pay {
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
+.pay a {
+}
+
+.pay a:hover {
+text-decoration: none;
+color: var(--color-main-dark)
+}
 
 .pay img {
+  display:  block;
+  margin-right: auto;
   margin-left: auto;
-  margin-left: auto;
-  width: 60%;
+  width: 70%;
+
 }
 
 

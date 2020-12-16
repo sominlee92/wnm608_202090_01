@@ -90,7 +90,6 @@ include_once "parts/templates.php";
    </div>
 
 
- <div class="view-window" style="background-image:url(img/image02.jpg)"></div>
 
 
 

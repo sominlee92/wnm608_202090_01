@@ -23,19 +23,54 @@ include_once "lib/php/functions.php";
 	 <div class="container">
       <div class="margin-box "> </div>
 
-     	<div class="card soft">
-      <h2>Product Checkout</h2>
+     	<div class="card light">
+         <h2>&#10022; Check-out &#10022;</h2>
+      </div>
+
+         <div>
+          <h3> Fill in your information </h3>
+         </div>
+
+      <div class="card hard">
 
 
-      <div>Fill in your information</div>
-      <form>
-      <input type="text" placeholder="Text" class="form-input">
-      <input type="text" placeholder="Number" class="form-input">
-      <input type="text" placeholder="Search" class="form-input">      
-      <input type="text" placeholder="Password" class="form-input">    
+         <form>
+               <div class="form-control">
+                     <label for="example-1" class="form-label">First Name</label>
+                     <input id="example-1" type="text" placeholder="Type First Name" class="form-input">
+                  </div>
+
+               <div class="form-control">
+                  <label for="example-2" class="form-label">Last Name</label>
+                  <input id="example-2" type="text" placeholder="Type Last Name" class="form-input">
+               </div>
+
+               <div class="form-control">
+                  <label for="example-3" class="form-label">E-mail</label>
+                  <input id="example-3" type="text" placeholder="Type E-mail" class="form-input">
+               </div>
 
 
-   </form>
+               <div class="form-control">
+                  <label for="example-4" class="form-label"> Address </label>
+                  <input id="example-4" type="text" placeholder="Type Adress" class="form-input">
+               </div>
+
+
+               <div class="form-control">
+                  <label for="example-3" class="form-label">Phone</label>
+                  <input id="example-3" type="text" placeholder="Type Phone number" class="form-input">
+               </div>
+
+               <div class="form-control">
+                  <label for="example-4" class="form-label">Card Number</label>
+                  <input id="example-4" type="password" placeholder="Type Card Number" class="form-input">
+               </div>
+
+
+         </form>
+
+      </div>
 
          <div class="pay">
             <button class="button button3"><a href="product_actions.php?action=reset-cart">Pay</a></button>

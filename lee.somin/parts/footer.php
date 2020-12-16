@@ -59,7 +59,7 @@
 <hr>
 <div class="footer-inside">
 
-<a href="/aau/wnm608_202090_01/lee.somin/admin/index.php"><h4>Product Admin</h4></a>
+<a href="/aau/wnm608_202090_01/lee.somin/admin/index.php"><h4>&#11089; Product Admin &#11089;</h4></a>
 
 </div>
 <hr>
