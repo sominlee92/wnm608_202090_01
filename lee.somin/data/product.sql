@@ -62,6 +62,7 @@ INSERT INTO `product` (`id`, `name`, `price`, `date_create`, `date_modify`, `cat
 (21, '10” Carebear Plush', 12.99, '2020-11-08 23:21:05', '2020-11-08 23:21:05', 'Toy', 'toy_10inch.jpg', 'toy_10inch_1.jpg,toy_10inch_2.jpg,toy_10inch_3.jpg', 'toy_10inch_m.jpg', '10 inch size care bear plush : Cheer bear', 30),
 (22, 'Smallest Carebear plush', 6.99, '2020-11-08 23:21:05', '2020-11-08 23:21:05', 'Toy', 'toy_smallest.jpg', 'toy_smallest_1.jpg,toy_smallest_2.jpg,toy_smallest_3.jpg', 'toy_smallest_m.jpg', 'The world smallest Care bear : cheer bear', 30),
 (23, 'My little pony Toy', 12.99, '2020-11-08 23:23:30', '2020-11-08 23:23:30', 'Toy', 'toy_pony.jpg', 'toy_pony_1.jpg,toy_pony_2.jpg,toy_pony_3.jpg', 'toy_pony_m.jpg', 'My little pony Figure : Pinkie Pie', 35);
+(40, 'Piglet Tsum Tsum Plush', 13.99, '2020-12-16 15:28:00', '2020-12-16 15:28:00', 'Toy', 'toy_piglet.jpg', 'toy_piglet_1.jpg, toy_piglet_2.jpg, toy_piglet_3.jpg', 'toy_piglet_m.jpg', 'Disney Tsum Tsum Plush : Piglet ', 35);
 
 --
 -- 덤프된 테이블의 인덱스
