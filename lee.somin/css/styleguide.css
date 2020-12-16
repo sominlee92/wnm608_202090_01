@@ -831,6 +831,17 @@ padding: 0.2em;
 }
 
 
+.pay {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pay img {
+  margin-left: auto;
+  margin-left: auto;
+  width: 60%;
+}
+
 
 .icon {
     display: inline-block;

@@ -9,19 +9,31 @@ include_once "lib/php/functions.php";
 
    <?php include "parts/meta.php" ?>
 </head>
+
+
 <body>
 
    <div class="margin-box "> </div>
 
    <div class="container">
-   	   <div class="margin-box "> </div>
 
-      <div class="card soft">
-         <h2>Thanks for Purchasing</h2>
+   	<div class="margin-box "> </div>
 
-         <a href="product_list.php">Back to shopping</a>
+      <div class="card hard">
+        
+         <div class="pay">
+
+            <img src="img/logo_back.jpg">
+
+            <h2>Thanks for Purchasing</h2>
+
+            <a href="product_list.php">&#8672; Back to shopping</a>
+         </div>
+
       </div>
+   
    </div>
+
 
 </body>
 </html>
