@@ -10,7 +10,7 @@ function getRequires($props) {
 }
 
 
-function makeStatement($type) {
+function makeStatement($type,$params=[]) {
 
    switch($type) {
       case "products_all":
