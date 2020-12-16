@@ -54,7 +54,7 @@ switch(@$_GET['crud']) {
       header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
       break;
 
- case 'create':
+   case 'create':
 
       $id = makeStatement("product_insert",[
          $_POST['product-name'],

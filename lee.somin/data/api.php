@@ -137,7 +137,7 @@ function makeStatement($type) {
                `quantity` = '{$params[4]}',
                `image_other` = '{$params[5]}',
                `image_thumb` = '{$params[6]}'
-            WHERE `id` = {$params[7]}
+            WHERE `id` = '{$params[7]}'
             ");
          break;
 
