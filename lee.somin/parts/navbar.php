@@ -1,3 +1,4 @@
+<base href="/aau/wnm608_202090_01/lee.somin/">
 
 
 <header class="navbar">
